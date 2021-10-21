@@ -6,3 +6,5 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.snippets
+copyright: Copyright &copy; 2021 Dainius T.
+repo_url: https://github.com/dainiuxt/kb
