@@ -4,6 +4,10 @@
 
 [Basic git commands](https://dev.to/anisha/basic-git-commands-33ec)
 
+[git flight rules - extensive git curriculum](https://github.com/k88hudson/git-flight-rules)
+
+[reserved location of git flight rules](https://github.com/dainiuxt/git-flight-rules)
+
 [A (Very) Simple Git Workflow](https://dev.to/afteralec/a-very-simple-git-workflow-54dl)
 
 [GitSheet - my git cheatsheet - DEV](https://dev.to/myrtle/gitsheet-my-git-cheatsheet-4o18)
