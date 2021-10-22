@@ -1,4 +1,4 @@
-site_name: WebDev Learning
+site_name: WebDev KB
 theme:
   favicon: img/favicon.png
   logo: img/favicon.png
@@ -14,8 +14,6 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-
-# favicon: favicon.png
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite

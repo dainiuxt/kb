@@ -1,8 +1,7 @@
-For the source thanks to [codingtute](https://codingtute.com/javascript-cheatsheets/)
-
 ## Loops
 
-for
+### for
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
 
 ```js
 for (let i = 0; i < 5; i++)
@@ -12,29 +11,8 @@ for (let i = 0; i < 5; i++)
 // OUTPUT: 0 1 2 3 4
 ```
 
-do-while
-
-```js
-let iterator = 0;
-do {
-    iterator++;
-    console.log(iterator);
-} while (iterator < 5);
-// OUTPUT: 1 2 3 4 5
-```
-
-while
-
-```js
-let iterator = 0;
-while (iterator < 5) {
-    iterator++;
-    console.log(iterator);
-}
-// OUTPUT: 1 2 3 4 5
-```
-
-for...in
+### for...in
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
 
 ```js
 const arr = [3, 5, 7];
@@ -45,7 +23,8 @@ for (let i in arr) {
 // OUTPUT: "0", "1", "2", "foo"
 ```
 
-for...of
+### for...of
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
 
 ```js
 const arr = [3, 5, 7];
@@ -55,16 +34,40 @@ for (let i of arr) {
 // OUTPUT: 3, 5, 7
 ```
 
+### do...while
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
+
+```js
+let iterator = 0;
+do {
+    iterator++;
+    console.log(iterator);
+} while (iterator < 5);
+// OUTPUT: 1 2 3 4 5
+```
+
+### while
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+
+```js
+let iterator = 0;
+while (iterator < 5) {
+    iterator++;
+    console.log(iterator);
+}
+// OUTPUT: 1 2 3 4 5
+```
+
 ## JS ES6
 
-Arrow function
+### Arrow function
 
 ```js
 const sum = (a, b) => a + b
 console.log(sum(2, 6)) // OUTPUT: 8
 ```
 
-Default parameters
+### Default parameters
 
 ```js
 function print(a = 5) {
@@ -74,7 +77,7 @@ print() // OUTPUT: 5
 print(22) // OUTPUT: 22
 ```
 
-Let Scope
+### Let Scope
 
 ```js
 let a = 3
@@ -85,7 +88,7 @@ if (true) {
 console.log(a) // OUTPUT: 3
 ```
 
-Const
+### Const
 
 ```js
 // can be assigned only once
@@ -93,7 +96,7 @@ const a = 55
 a = 44 // throws an error
 ```
 
-Multiline string
+### Multiline string
 
 ```js
 console.log(`
@@ -102,7 +105,7 @@ multiline string
 `)
 ```
 
-Template strings
+### Template strings
 
 ```js
 const name = 'World';
@@ -110,14 +113,14 @@ const message = `Hello ${name}`;
 console.log(message); // OUTPUT: "Hello World"
 ```
 
-Exponent operator
+### Exponent operator
 
 ```js
 const byte = 2 ** 8
 // Same as: Math.pow(2, 8)
 ```
 
-Spread operator
+### Spread operator
 
 ```js
 const a = [ 1, 2 ]
@@ -126,27 +129,27 @@ const c = [ ...a, ...b ]
 console.log(c) // OUTPUT: [1, 2, 3, 4]
 ```
 
-String `includes()`
+### String `includes()`
 
 ```js
 console.log('apple'.includes('pl')); // OUTPUT: true
 console.log('apple'.includes('tt')); // OUTPUT: false
 ```
 
-String `startsWith()`
+### String `startsWith()`
 
 ```js
 console.log('apple'.startsWith('ap')); // OUTPUT: true
 console.log('apple'.startsWith('bb')); // OUTPUT: false
 ```
 
-String `repeat()`
+### String `repeat()`
 
 ```js
 console.log('ab'.repeat(3)); // OUTPUT: "ababab"
 ```
 
-Destructuring `array`
+### Destructuring `array`
 
 ```js
 let [a, b] = [3, 7];
@@ -154,7 +157,7 @@ console.log(a); // 3
 console.log(b); // 7
 ```
 
-Destructuring `object`
+### Destructuring `object`
 
 ```js
 let obj = {
@@ -166,7 +169,7 @@ console.log(a); // OUTPUT: 55
 console.log(b); // OUTPUT: 44
 ```
 
-Object `property` assignment
+### Object `property` assignment
 
 ```js
 const a = 2
@@ -177,7 +180,7 @@ const obj = { a, b }
 console.log(obj) // OUTPUT: { a: 2, b: 5 }
 ```
 
-Object `function` assignment
+### Object `function` assignment
 
 ```js
 const obj = {
@@ -189,7 +192,7 @@ const obj = {
 obj.b() // OUTPUT: "b"
 ```
 
-`Object.assign()`
+### `Object.assign()`
 
 ```js
 const obj1 = { a: 1 }
@@ -199,7 +202,7 @@ console.log(obj3)
 // { a: 1, b: 2 }
 ```
 
-`Object.entries()`
+### `Object.entries()`
 
 ```js
 const obj = {
@@ -221,7 +224,7 @@ console.log(entries);
 ]; */
 ```
 
-Promises with `finally`
+### Promises with `finally`
 
 ```js
 promise
@@ -233,7 +236,7 @@ promise
 promise is fulflled or rejected.*/
 ```
 
-Destructuring Nested Objects
+### Destructuring Nested Objects
 
 ```js
 const Person = {
@@ -254,7 +257,7 @@ console.log(name, state, pinCode)
 console.log(city) // ReferenceError
 ```
 
-Spread operator
+### Spread operator
 
 ```js
 const a = {
@@ -277,7 +280,7 @@ effects/affecting the original */
 
 ## Arrays destructuring
 
-Assigning `array` items to variables
+### Assigning `array` items to variables
 
 ```js
 const [a, b, c] = [123, 'second', true];
@@ -286,14 +289,14 @@ const [a, b, c] = [123, 'second', true];
 // c => true
 ```
 
-Skipping items
+### Skipping items
 
 ```js
 const [, b] = [123, 'second', true];
 // b => 'second'
 ```
 
-Assigning the first values, storing the rest together
+### Assigning the first values, storing the rest together
 
 ```js
 const [a, b, ...rest] = [123, 'second', true, false, 42];
@@ -302,7 +305,7 @@ const [a, b, ...rest] = [123, 'second', true, false, 42];
 // rest => [true, false, 42]
 ```
 
-Swapping variables
+### Swapping variables
 
 ```js
 let x = true;
@@ -314,14 +317,16 @@ let y = false;
 
 ## String methods
 
-`charAt()`
+### `charAt()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt)
 
 ```js
 let txt = 'Hello World';
 console.log(txt.charAt(0)); // OUTPUT: 'H'
 ```
 
-`concat()`
+### `concat()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)
 
 ```js
 let str1 = 'Hello ';
@@ -329,28 +334,32 @@ let str2 = 'World';
 console.log(str1.concat(str2)); // OUTPUT: 'Hello world';
 ```
 
-`indexOf()`
+### `indexOf()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
 
 ```js
 let txt = 'Lets find where the `pen` is';
 console.log(txt.indexOf('pen')); // OUTPUT: 21
 ```
 
-`replace()`
+### `replace()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
 ```js
 let str = 'Hello Dev!'
 console.log(str.replace('Dev', 'World')); // OUTPUT: 'Hello World'
 ```
 
-`search()`
+### `search()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
 
 ```js
 let str = 'Hello dev';
 console.log(str.search('dev')); // OUTPUT: 6
 ```
 
-`slice()` [More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+### `slice()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 
 ```js
 let str1 = 'The morning is upon us.', // the length of str1 is 23.
@@ -364,7 +373,8 @@ console.log(str4)  // OUTPUT: is upon us.
 console.log(str5)  // OUTPUT: ""
 ```
 
-`substr()` [More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
+### `substr()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
 
 ```js
 const str = 'Mozilla';
@@ -374,7 +384,8 @@ console.log(str.substr(2));
 // expected output: "zilla"
 ```
 
-`substring()` [More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
+### `substring()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
 
 ```js
 const str = 'Mozilla';
@@ -392,9 +403,84 @@ console.log(text.substring(2,5))  // => "zil"
 console.log(text.substr(2,3))     // => "zil"
 ```
 
+### `toUpperCase()` / `toLowerCase()`
+[`toUpperCase()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) | [`toLowerCase()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
+
+```js
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+console.log(sentence.toUpperCase());
+// expected output: "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
+const allcaps = 'HAPPY CAPSLOCK DAY!';
+console.log(allcaps.toLowerCase());
+// EXPECTED OUTPOOT: "HAPPY CAPSLOCK DAY!"
+```
+
+### `valueOf()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/valueOf)
+
+```js
+var x = new String('Hello world');
+console.log(x.valueOf()); // Displays 'Hello world'
+```
+
+### `trim()`
+[Mode on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+
+```js
+const greeting = '   Hello world!   ';
+console.log(greeting);
+// expected output: "   Hello world!   ";
+console.log(greeting.trim());
+// expected output: "Hello world!";
+```
+
+`toString()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toString)
+
+```js
+const myNumber = 535;
+console.log(myNumber.toString()); // OUTPUT: "535";
+```
+
+`includes()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+
+```js
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+const word = 'fox';
+console.log(sentence.includes(word)); // OUTPUT: true
+```
+
+`charCodeAt()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
+
+```js
+let word = 'TEST';
+console.log(word.charCodeAt(0)); // OUTPUT: 84
+```
+
+`match()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
+
+```js
+const paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';
+const found = paragraph.match("th");
+console.log(found); // OUTPUT: ["th"]
+```
+
+`split()`
+[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+
+```js
+const str = 'The quick brown fox jumps over the lazy dog.';
+const words = str.split(' ');
+console.log(words[3]);
+// expected output: "fox"
+```
+
 ## JavaScript Async/Await
 
-Async
+### Async
 
 When we append the keyword `async` to the `function`, this `function`
 returns the `Promise` by default on execution. Async keyword provides
@@ -410,7 +496,7 @@ async function f() {
 f().then(alert); // OUTPUT: 1
 ```
 
-Await
+### Await
 The keyword `await` makes JavaScript wait until that promise settles and returns its result
 
 - The `await` works only inside `async` functions
@@ -428,7 +514,7 @@ f();
 
 ## API calls
 
-XML HTTP Request
+### XML HTTP Request
 
 - All modern browsers support the XMLHttpRequest `object` to `request` data from a server.
 - It works on the oldest browsers as well as on new ones.
@@ -444,7 +530,7 @@ request.onload = () => {
 }
 ```
 
-Fetch
+### Fetch
 
 - The Fetch API provides an interface for fetching resources (including across the network) in an asynchronous manner.
 - It returns a Promise
@@ -460,7 +546,7 @@ fetch('https://jsonplaceholder.typicode.com/todos'
 })
 ```
 
-Axios
+### Axios
 
 - It is an open-source library for making HTTP requests.
 - It works on both Browsers and Node.js
@@ -475,7 +561,7 @@ axios.get("https://jsonplaceholder.typicode.com/todos")
     })
 ```
 
-jQuery AJAX
+### jQuery AJAX
 
 - It performs asynchronous HTTP requests.
 - Uses `$.ajax()` method to make the requests.
