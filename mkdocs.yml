@@ -1,5 +1,20 @@
-site_name: WebDev Learning Resources
-theme: material
+site_name: WebDev Learning
+theme:
+  favicon: img/favicon.png
+  logo: img/favicon.png
+  name: material
+  palette:
+    - scheme: slate 
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
 # favicon: favicon.png
 markdown_extensions:
   - pymdownx.highlight
@@ -8,3 +23,4 @@ markdown_extensions:
   - pymdownx.snippets
 copyright: Copyright &copy; 2021 Dainius T.
 repo_url: https://github.com/dainiuxt/kb
+repo_name: dainiuxt/kb
