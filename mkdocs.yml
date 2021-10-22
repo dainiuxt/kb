@@ -11,6 +11,8 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
     - scheme: default
+      primary: blue grey
+      accent: light blue
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode

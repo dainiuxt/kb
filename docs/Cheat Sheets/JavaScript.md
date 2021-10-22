@@ -373,17 +373,6 @@ console.log(str4)  // OUTPUT: is upon us.
 console.log(str5)  // OUTPUT: ""
 ```
 
-### `substr()`
-[More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
-
-```js
-const str = 'Mozilla';
-console.log(str.substr(1, 2));
-// expected output: "oz"
-console.log(str.substr(2));
-// expected output: "zilla"
-```
-
 ### `substring()`
 [More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
 
@@ -392,6 +381,17 @@ const str = 'Mozilla';
 console.log(str.substring(1, 3));
 // expected output: "oz"
 console.log(str.substring(2));
+// expected output: "zilla"
+```
+
+### `substr()`
+Deprecated. Not for use in new websites. [More on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
+
+```js
+const str = 'Mozilla';
+console.log(str.substr(1, 2));
+// expected output: "oz"
+console.log(str.substr(2));
 // expected output: "zilla"
 ```
 
