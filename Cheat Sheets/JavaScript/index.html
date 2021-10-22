@@ -1,0 +1,1102 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
+    
+    
+      
+        <title>JavaScript - WebDev Learning</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.db9e7362.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#loops" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="WebDev Learning" class="md-header__button md-logo" aria-label="WebDev Learning" data-md-component="logo">
+      
+  <img src="../../img/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WebDev Learning
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              JavaScript
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/dainiuxt/kb/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dainiuxt/kb
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="WebDev Learning" class="md-nav__button md-logo" aria-label="WebDev Learning" data-md-component="logo">
+      
+  <img src="../../img/favicon.png" alt="logo">
+
+    </a>
+    WebDev Learning
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/dainiuxt/kb/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dainiuxt/kb
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome to WebDev learning
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02css/" class="md-nav__link">
+        CSS
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03JavaScript/" class="md-nav__link">
+        JavaScript/ES6
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tools/" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../courses/" class="md-nav__link">
+        Courses
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/" class="md-nav__link">
+        git
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practice/" class="md-nav__link">
+        Tasks/Practice
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/" class="md-nav__link">
+        Python
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../videolessons/" class="md-nav__link">
+        Video lessons
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zhelpedit/" class="md-nav__link">
+        Admin links
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          Cheat Sheets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Cheat Sheets" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Cheat Sheets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          JavaScript
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        JavaScript
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    Loops
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#js-es6" class="md-nav__link">
+    JS ES6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arrays-destructuring" class="md-nav__link">
+    Arrays destructuring
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-methods" class="md-nav__link">
+    String methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#javascript-asyncawait" class="md-nav__link">
+    JavaScript Async/Await
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-calls" class="md-nav__link">
+    API calls
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13">
+          Code Snippets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Code Snippets" data-md-level="1">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          Code Snippets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Code%20Snippets/html/" class="md-nav__link">
+        HTML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Code%20Snippets/js/" class="md-nav__link">
+        JavaScript
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    Loops
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#js-es6" class="md-nav__link">
+    JS ES6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arrays-destructuring" class="md-nav__link">
+    Arrays destructuring
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-methods" class="md-nav__link">
+    String methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#javascript-asyncawait" class="md-nav__link">
+    JavaScript Async/Await
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-calls" class="md-nav__link">
+    API calls
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/dainiuxt/kb/edit/master/docs/Cheat Sheets/JavaScript.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>JavaScript</h1>
+                
+                <p>For the source thanks to <a href="https://codingtute.com/javascript-cheatsheets/">codingtute</a></p>
+<h2 id="loops">Loops</h2>
+<p>for</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mf">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="c1">// OUTPUT: 0 1 2 3 4</span>
+</code></pre></div>
+<p>do-while</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">iterator</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="nx">iterator</span><span class="o">++</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">iterator</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="nx">iterator</span> <span class="o">&lt;</span> <span class="mf">5</span><span class="p">);</span>
+<span class="c1">// OUTPUT: 1 2 3 4 5</span>
+</code></pre></div>
+<p>while</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">iterator</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">iterator</span> <span class="o">&lt;</span> <span class="mf">5</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">iterator</span><span class="o">++</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">iterator</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// OUTPUT: 1 2 3 4 5</span>
+</code></pre></div>
+<p>for...in</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mf">3</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">7</span><span class="p">];</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">foo</span> <span class="o">=</span> <span class="s1">&#39;hello&#39;</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="ow">in</span> <span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// OUTPUT: &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;foo&quot;</span>
+</code></pre></div>
+<p>for...of</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mf">3</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">7</span><span class="p">];</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="k">of</span> <span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// OUTPUT: 3, 5, 7</span>
+</code></pre></div>
+<h2 id="js-es6">JS ES6</h2>
+<p>Arrow function</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">sum</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="mf">6</span><span class="p">))</span> <span class="c1">// OUTPUT: 8</span>
+</code></pre></div>
+<p>Default parameters</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">print</span><span class="p">(</span><span class="nx">a</span> <span class="o">=</span> <span class="mf">5</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">print</span><span class="p">()</span> <span class="c1">// OUTPUT: 5</span>
+<span class="nx">print</span><span class="p">(</span><span class="mf">22</span><span class="p">)</span> <span class="c1">// OUTPUT: 22</span>
+</code></pre></div>
+<p>Let Scope</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="mf">3</span>
+<span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="mf">5</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="c1">// OUTPUT: 5</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="c1">// OUTPUT: 3</span>
+</code></pre></div>
+<p>Const</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// can be assigned only once</span>
+<span class="kd">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="mf">55</span>
+<span class="nx">a</span> <span class="o">=</span> <span class="mf">44</span> <span class="c1">// throws an error</span>
+</code></pre></div>
+<p>Multiline string</p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span>
+<span class="sb">This is a</span>
+<span class="sb">multiline string</span>
+<span class="sb">`</span><span class="p">)</span>
+</code></pre></div>
+<p>Template strings</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;World&#39;</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">message</span> <span class="o">=</span> <span class="sb">`Hello </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span> <span class="c1">// OUTPUT: &quot;Hello World&quot;</span>
+</code></pre></div>
+<p>Exponent operator</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="kr">byte</span> <span class="o">=</span> <span class="mf">2</span> <span class="o">**</span> <span class="mf">8</span>
+<span class="c1">// Same as: Math.pow(2, 8)</span>
+</code></pre></div>
+<p>Spread operator</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">[</span> <span class="mf">1</span><span class="p">,</span> <span class="mf">2</span> <span class="p">]</span>
+<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="p">[</span> <span class="mf">3</span><span class="p">,</span> <span class="mf">4</span> <span class="p">]</span>
+<span class="kd">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="p">[</span> <span class="p">...</span><span class="nx">a</span><span class="p">,</span> <span class="p">...</span><span class="nx">b</span> <span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">c</span><span class="p">)</span> <span class="c1">// OUTPUT: [1, 2, 3, 4]</span>
+</code></pre></div>
+<p>String <code>includes()</code></p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;pl&#39;</span><span class="p">));</span> <span class="c1">// OUTPUT: true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;tt&#39;</span><span class="p">));</span> <span class="c1">// OUTPUT: false</span>
+</code></pre></div>
+<p>String <code>startsWith()</code></p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">&#39;ap&#39;</span><span class="p">));</span> <span class="c1">// OUTPUT: true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">&#39;bb&#39;</span><span class="p">));</span> <span class="c1">// OUTPUT: false</span>
+</code></pre></div>
+<p>String <code>repeat()</code></p>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;ab&#39;</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="mf">3</span><span class="p">));</span> <span class="c1">// OUTPUT: &quot;ababab&quot;</span>
+</code></pre></div>
+<p>Destructuring <code>array</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="p">[</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mf">3</span><span class="p">,</span> <span class="mf">7</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span> <span class="c1">// 3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span> <span class="c1">// 7</span>
+</code></pre></div>
+<p>Destructuring <code>object</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">a</span><span class="o">:</span> <span class="mf">55</span><span class="p">,</span>
+    <span class="nx">b</span><span class="o">:</span> <span class="mf">44</span>
+<span class="p">};</span>
+<span class="kd">let</span> <span class="p">{</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span> <span class="c1">// OUTPUT: 55</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span> <span class="c1">// OUTPUT: 44</span>
+</code></pre></div>
+<p>Object <code>property</code> assignment</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="mf">2</span>
+<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="mf">5</span>
+<span class="kd">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span> <span class="p">}</span>
+<span class="c1">// Before es6:</span>
+<span class="c1">// obj = { a: a, b: b }</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="c1">// OUTPUT: { a: 2, b: 5 }</span>
+</code></pre></div>
+<p>Object <code>function</code> assignment</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">a</span><span class="o">:</span> <span class="mf">5</span><span class="p">,</span>
+    <span class="nx">b</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">obj</span><span class="p">.</span><span class="nx">b</span><span class="p">()</span> <span class="c1">// OUTPUT: &quot;b&quot;</span>
+</code></pre></div>
+<p><code>Object.assign()</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">obj1</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">a</span><span class="o">:</span> <span class="mf">1</span> <span class="p">}</span>
+<span class="kd">const</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">b</span><span class="o">:</span> <span class="mf">2</span> <span class="p">}</span>
+<span class="kd">const</span> <span class="nx">obj3</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">({},</span> <span class="nx">obj1</span><span class="p">,</span> <span class="nx">obj2</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj3</span><span class="p">)</span>
+<span class="c1">// { a: 1, b: 2 }</span>
+</code></pre></div>
+<p><code>Object.entries()</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">firstName</span><span class="o">:</span> <span class="s1">&#39;FirstName&#39;</span><span class="p">,</span>
+    <span class="nx">lastName</span><span class="o">:</span> <span class="s1">&#39;LastName&#39;</span><span class="p">,</span>
+    <span class="nx">age</span><span class="o">:</span> <span class="mf">24</span><span class="p">,</span>
+    <span class="nx">country</span><span class="o">:</span> <span class="s1">&#39;India&#39;</span><span class="p">,</span>
+<span class="p">};</span>
+<span class="kd">const</span> <span class="nx">entries</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
+<span class="cm">/* returns an array of [key, value]</span>
+<span class="cm">pairs of the object passed */</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">entries</span><span class="p">);</span>
+<span class="cm">/* prints</span>
+<span class="cm">[</span>
+<span class="cm">[&#39;firstName&#39;, &#39;FirstName&#39;],</span>
+<span class="cm">[&#39;lastName&#39;, &#39;LastName&#39;],</span>
+<span class="cm">[&#39;age&#39;, 24],</span>
+<span class="cm">[&#39;country&#39;, &#39;India&#39;]</span>
+<span class="cm">]; */</span>
+</code></pre></div>
+<p>Promises with <code>finally</code></p>
+<div class="highlight"><pre><span></span><code><span class="nx">promise</span>
+<span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">result</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="err">···</span> <span class="p">})</span>
+<span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="err">···</span> <span class="p">})</span>
+<span class="p">.</span><span class="k">finally</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="cm">/* logic</span>
+<span class="cm">    independent of success/error */</span> <span class="p">})</span>
+<span class="cm">/* The handler is called when the</span>
+<span class="cm">promise is fulflled or rejected.*/</span>
+</code></pre></div>
+<p>Destructuring Nested Objects</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">Person</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Harry Potter&quot;</span><span class="p">,</span>
+    <span class="nx">age</span><span class="o">:</span> <span class="mf">29</span><span class="p">,</span>
+    <span class="nx">sex</span><span class="o">:</span> <span class="s2">&quot;male&quot;</span><span class="p">,</span>
+    <span class="nx">materialStatus</span><span class="o">:</span> <span class="s2">&quot;single&quot;</span><span class="p">,</span>
+    <span class="nx">address</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">country</span><span class="o">:</span> <span class="s2">&quot;USA&quot;</span><span class="p">,</span>
+        <span class="nx">state</span><span class="o">:</span> <span class="s2">&quot;Nevada&quot;</span><span class="p">,</span>
+        <span class="nx">city</span><span class="o">:</span> <span class="s2">&quot;Carson City&quot;</span><span class="p">,</span>
+        <span class="nx">pinCode</span><span class="o">:</span> <span class="s2">&quot;500014&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">};</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">address</span> <span class="o">:</span> <span class="p">{</span> <span class="nx">state</span><span class="p">,</span> <span class="nx">pinCode</span> <span class="p">},</span> <span class="nx">name</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">Person</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">state</span><span class="p">,</span> <span class="nx">pinCode</span><span class="p">)</span>
+<span class="c1">// Harry Potter Nevada 500014</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">city</span><span class="p">)</span> <span class="c1">// ReferenceError</span>
+</code></pre></div>
+<p>Spread operator</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">firstName</span><span class="o">:</span> <span class="s2">&quot;FirstName&quot;</span><span class="p">,</span>
+    <span class="nx">lastName</span><span class="o">:</span> <span class="s2">&quot;LastName1&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">...</span><span class="nx">a</span><span class="p">,</span>
+    <span class="nx">lastName</span><span class="o">:</span> <span class="s2">&quot;LastName2&quot;</span><span class="p">,</span>
+    <span class="nx">canSing</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span>
+<span class="c1">//{firstName: &quot;FirstName&quot;, lastName: &quot;LastName1&quot;}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span>
+<span class="cm">/* {firstName: &quot;FirstName&quot;, lastName: &quot;LastName2&quot;,</span>
+<span class="cm">canSing: true} */</span>
+<span class="cm">/* great for modifying objects without side</span>
+<span class="cm">effects/affecting the original */</span>
+</code></pre></div>
+<h2 id="arrays-destructuring">Arrays destructuring</h2>
+<p>Assigning <code>array</code> items to variables</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="p">[</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mf">123</span><span class="p">,</span> <span class="s1">&#39;second&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">];</span>
+<span class="c1">// a =&gt; 123</span>
+<span class="c1">// b =&gt; &#39;second&#39;</span>
+<span class="c1">// c =&gt; true</span>
+</code></pre></div>
+<p>Skipping items</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="p">[,</span> <span class="nx">b</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mf">123</span><span class="p">,</span> <span class="s1">&#39;second&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">];</span>
+<span class="c1">// b =&gt; &#39;second&#39;</span>
+</code></pre></div>
+<p>Assigning the first values, storing the rest together</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="p">[</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="p">...</span><span class="nx">rest</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mf">123</span><span class="p">,</span> <span class="s1">&#39;second&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="mf">42</span><span class="p">];</span>
+<span class="c1">// a =&gt; 123</span>
+<span class="c1">// b =&gt; &#39;second&#39;</span>
+<span class="c1">// rest =&gt; [true, false, 42]</span>
+</code></pre></div>
+<p>Swapping variables</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="p">[</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="nx">y</span><span class="p">,</span> <span class="nx">x</span><span class="p">];</span>
+<span class="c1">// x =&gt; false</span>
+<span class="c1">// y =&gt; true</span>
+</code></pre></div>
+<h2 id="string-methods">String methods</h2>
+<p><code>charAt()</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">txt</span> <span class="o">=</span> <span class="s1">&#39;Hello World&#39;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">txt</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="mf">0</span><span class="p">));</span> <span class="c1">// OUTPUT: &#39;H&#39;</span>
+</code></pre></div>
+<p><code>concat()</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">str1</span> <span class="o">=</span> <span class="s1">&#39;Hello &#39;</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">str2</span> <span class="o">=</span> <span class="s1">&#39;World&#39;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str1</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">str2</span><span class="p">));</span> <span class="c1">// OUTPUT: &#39;Hello world&#39;;</span>
+</code></pre></div>
+<p><code>indexOf()</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">txt</span> <span class="o">=</span> <span class="s1">&#39;Lets find where the `pen` is&#39;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">txt</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;pen&#39;</span><span class="p">));</span> <span class="c1">// OUTPUT: 21</span>
+</code></pre></div>
+<p><code>replace()</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="s1">&#39;Hello Dev!&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s1">&#39;Dev&#39;</span><span class="p">,</span> <span class="s1">&#39;World&#39;</span><span class="p">));</span> <span class="c1">// OUTPUT: &#39;Hello World&#39;</span>
+</code></pre></div>
+<p><code>search()</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="s1">&#39;Hello dev&#39;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s1">&#39;dev&#39;</span><span class="p">));</span> <span class="c1">// OUTPUT: 6</span>
+</code></pre></div>
+<p><code>slice()</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice">More on MDN</a></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">str1</span> <span class="o">=</span> <span class="s1">&#39;The morning is upon us.&#39;</span><span class="p">,</span> <span class="c1">// the length of str1 is 23.</span>
+    <span class="nx">str2</span> <span class="o">=</span> <span class="nx">str1</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="mf">8</span><span class="p">),</span>
+    <span class="nx">str3</span> <span class="o">=</span> <span class="nx">str1</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span> <span class="o">-</span><span class="mf">2</span><span class="p">),</span>
+    <span class="nx">str4</span> <span class="o">=</span> <span class="nx">str1</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">12</span><span class="p">),</span>
+    <span class="nx">str5</span> <span class="o">=</span> <span class="nx">str1</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">30</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str2</span><span class="p">)</span>  <span class="c1">// OUTPUT: he morn</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str3</span><span class="p">)</span>  <span class="c1">// OUTPUT: morning is upon u</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str4</span><span class="p">)</span>  <span class="c1">// OUTPUT: is upon us.</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str5</span><span class="p">)</span>  <span class="c1">// OUTPUT: &quot;&quot;</span>
+</code></pre></div>
+<p><code>substr()</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr">More on MDN</a></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">str</span> <span class="o">=</span> <span class="s1">&#39;Mozilla&#39;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">));</span>
+<span class="c1">// expected output: &quot;oz&quot;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mf">2</span><span class="p">));</span>
+<span class="c1">// expected output: &quot;zilla&quot;</span>
+</code></pre></div>
+<p><code>substring()</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring">More on MDN</a></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">str</span> <span class="o">=</span> <span class="s1">&#39;Mozilla&#39;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="mf">3</span><span class="p">));</span>
+<span class="c1">// expected output: &quot;oz&quot;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mf">2</span><span class="p">));</span>
+<span class="c1">// expected output: &quot;zilla&quot;</span>
+</code></pre></div>
+<p>Difference between <code>substr()</code> and <code>substring()</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">text</span> <span class="o">=</span> <span class="s1">&#39;Mozilla&#39;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="mf">5</span><span class="p">))</span>  <span class="c1">// =&gt; &quot;zil&quot;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">))</span>     <span class="c1">// =&gt; &quot;zil&quot;</span>
+</code></pre></div>
+<h2 id="javascript-asyncawait">JavaScript Async/Await</h2>
+<p>Async</p>
+<p>When we append the keyword <code>async</code> to the <code>function</code>, this <code>function</code>
+returns the <code>Promise</code> by default on execution. Async keyword provides
+extra information to the user of the function:</p>
+<ul>
+<li>The function contains some Asynchronous Execution</li>
+<li>The returned value will be the Resolved Value for the Promise</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">f</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="mf">1</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">f</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">alert</span><span class="p">);</span> <span class="c1">// OUTPUT: 1</span>
+</code></pre></div>
+<p>Await
+The keyword <code>await</code> makes JavaScript wait until that promise settles and returns its result</p>
+<ul>
+<li>The <code>await</code> works only inside <code>async</code> functions</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">f</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">promise</span> <span class="o">=</span> <span class="ow">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="s2">&quot;done!&quot;</span><span class="p">),</span> <span class="mf">1000</span><span class="p">)</span>
+    <span class="p">});</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">promise</span><span class="p">;</span> <span class="c1">// wait until the promise resolves</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span> <span class="c1">// OUTPUT: &quot;done!&quot;</span>
+<span class="p">}</span>
+<span class="nx">f</span><span class="p">();</span>
+</code></pre></div>
+<h2 id="api-calls">API calls</h2>
+<p>XML HTTP Request</p>
+<ul>
+<li>All modern browsers support the XMLHttpRequest <code>object</code> to <code>request</code> data from a server.</li>
+<li>It works on the oldest browsers as well as on new ones.</li>
+<li>It was deprecated in ES6 but is still widely used.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">request</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+<span class="nx">request</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;https://jsonplaceholder.typicode.com/todos&#39;</span><span class="p">)</span>
+<span class="nx">request</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
+<span class="nx">request</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">request</span><span class="p">.</span><span class="nx">response</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Fetch</p>
+<ul>
+<li>The Fetch API provides an interface for fetching resources (including across the network) in an asynchronous manner.</li>
+<li>It returns a Promise</li>
+<li>It is an object which contains a single value either a Response or an Error that occurred.</li>
+<li><code>.then()</code> tells the program what to do once Promise is completed.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://jsonplaceholder.typicode.com/todos&#39;</span>
+<span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">})</span>
+</code></pre></div>
+<p>Axios</p>
+<ul>
+<li>It is an open-source library for making HTTP requests.</li>
+<li>It works on both Browsers and Node.js</li>
+<li>It can be included in an HTML file by using an external CDN</li>
+<li>It also returns promises like fetch API</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+<span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/todos&quot;</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">)</span>
+    <span class="p">})</span>
+</code></pre></div>
+<p>jQuery AJAX</p>
+<ul>
+<li>It performs asynchronous HTTP requests.</li>
+<li>Uses <code>$.ajax()</code> method to make the requests.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="s2">&quot;https://jsonplaceholder.typicode.com/todos&quot;</span><span class="p">,</span>
+    <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;GET&quot;</span><span class="p">,</span>
+    <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">})</span>
+<span class="p">})</span>
+</code></pre></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../zhelpedit/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Admin links" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Admin links
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../Code%20Snippets/html/" class="md-footer__link md-footer__link--next" aria-label="Next: HTML" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              HTML
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Dainius T.
+          </div>
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e84347e.min.js"></script>
+      
+    
+  </body>
+</html>
