@@ -1,5 +1,7 @@
 # CSS
 
+[What do I need to read to be a great at CSS?](https://www.baldurbjarnason.com/2021/what-do-i-need-to-read-to-be-a-css-dev/)
+
 [Designing shadows in CSS](https://www.joshwcomeau.com/css/designing-shadows/)
 
 [CSS hide scrollbars](https://daily-dev-tips.com/posts/css-hide-scrollbars/)
