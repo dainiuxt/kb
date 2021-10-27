@@ -1,5 +1,9 @@
 # CSS
 
+[Smart CSS Solutions For Common UI Challenges — Smashing Magazine](https://www.smashingmagazine.com/2021/10/modern-css-solutions-for-common-problems/)
+
+> Writing CSS has probably never been more fun and exciting than it is today. In this post we’ll take a look at common problems and use cases we all have to face in our work and how to solve them with modern CSS. If you’re interested, we’ve also just recently covered CSS auditing tools, CSS generators, front-end boilerplates and VS code extensions — you might find them useful, too. 
+
 [What do I need to read to be a great at CSS?](https://www.baldurbjarnason.com/2021/what-do-i-need-to-read-to-be-a-css-dev/)
 
 [Designing shadows in CSS](https://www.joshwcomeau.com/css/designing-shadows/)
@@ -26,4 +30,6 @@
 
 ### CSS templates/boilerplate
 
-[FlowBite](https://flowbite.com/docs/getting-started/introduction/) is an open-source collection of UI elements based on the utility-first CSS framework __Tailwind__ designed and coded by Themesberg available in Figma and as web components.
+[FlowBite](https://flowbite.com/docs/getting-started/introduction/) 
+
+> Open-source collection of UI elements based on the utility-first CSS framework __Tailwind__ designed and coded by Themesberg available in Figma and as web components.
