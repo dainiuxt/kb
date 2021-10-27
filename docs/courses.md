@@ -11,3 +11,7 @@
 [Learn to Code — For Free — Coding Courses for Busy People](https://www.freecodecamp.org/) - learn FullStack at your own pace.
 
 [Your Career in Web Development Starts Here | The Odin Project](https://www.theodinproject.com/) - learn Foundations, Ruby on Rails FullStack or JavaScript FullStack. Community supported free learning paths.
+
+[JetBrains Academy: Frontend Dev track (free)](https://hyperskill.org/tracks/5)
+
+> Do you want to create your own websites or web applications? Choose this track to learn the most popular development tool suite among programmers around the world. We will cover the basics of JavaScript, HTML, and CSS to discover the power of modern Frontend development.
