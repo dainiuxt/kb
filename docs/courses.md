@@ -15,3 +15,5 @@
 [JetBrains Academy: Frontend Dev track (free)](https://hyperskill.org/tracks/5)
 
 > Do you want to create your own websites or web applications? Choose this track to learn the most popular development tool suite among programmers around the world. We will cover the basics of JavaScript, HTML, and CSS to discover the power of modern Frontend development.
+
+[Codeamigo](https://codeamigo.dev/) - free courses, ispired by [rejection from Codecademy](https://docs.codeamigo.dev/blog/why-codeamigo).
