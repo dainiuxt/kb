@@ -1,5 +1,9 @@
 # Knowledge Base
 
+If you like what you see here, you can buy me a coffee. Thanks!
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="anthroposamu" data-color="#222" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+
 This is collection of usefull resources to help progress on Your path to become a Web Developer.
 
 [Tech Interview HandBook](https://techinterviewhandbook.org/)
@@ -19,8 +23,6 @@ This is collection of usefull resources to help progress on Your path to become 
 [Free hosting services for web developers - DEV Community](https://dev.to/josiasaurel/free-hosting-services-for-web-developers-3n4g)
 
 [Become a programmer: The missing lessons - DEV](https://dev.to/vetswhocode/become-a-programmer-the-missing-lessons-22p2)
-
-[Projects to build that would get you hired as a beginner. - DEV](https://dev.to/alindavidsin/projects-to-build-that-would-get-you-hired-as-a-beginner-3a5b)
 
 [Resources to become a Well-Rounded Full-Stack Developer | Azure SQL Devs’ Corner](https://devblogs.microsoft.com/azure-sql/resources-to-become-a-full-stack-well-rounded-developer/)
 

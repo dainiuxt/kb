@@ -1,5 +1,7 @@
 # Video lessons
 
+[Web Applications for Everybody - Dr. Chuck Teaches HTML, JavaScript, PHP, SQL, and More](https://www.freecodecamp.org/news/web-applications-for-everybody-dr-chuck/) - 14 hours video ahead. Make yourself some tea and... Don't panic, Starman!
+
 [HTML](https://www.youtube.com/watch?v=UB1O30fR-EE)
 
 [CSS](https://www.youtube.com/watch?v=yfoY53QXEnI)
