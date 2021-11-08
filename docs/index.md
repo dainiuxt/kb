@@ -34,6 +34,12 @@ This is collection of usefull resources to help progress on Your path to become 
 
 ### Reading/Info
 
+[How To Learn Stuff Quickly](https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/)
+
+> It's often said that the internet has democratized education: the sum of human knowledge is only a Google search away! And yet, having access to information is only half of the story; you also need to be able to convert raw information into usable skills.
+> 
+> For a lot of us, the gap between the two can lead to things like tutorial hell—getting stuck doing tutorial after tutorial without ever feeling like you're making substantive progress.
+
 [Useful Resources To Learn Web Development & To Create Your Website](https://apoorvtyagi.tech/useful-resources-to-learn-web-development-and-to-create-your-website)
 
 [Tips You Should know for Visual Studio Code - VSCode](https://dev.to/zahab/6-tips-and-tricks-every-developer-should-know-in-visual-studio-code-48mo)
