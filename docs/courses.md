@@ -16,6 +16,10 @@
 
 > Your Career in Web Development Starts Here: learn Foundations, Ruby on Rails FullStack or JavaScript FullStack. Community supported free learning paths.
 
+[Project Euler](https://projecteuler.net/)
+
+> Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient methods, the use of a computer and programming skills will be required to solve most problems.
+
 [JetBrains Academy: Frontend Dev track (free)](https://hyperskill.org/tracks/5)
 
 > Do you want to create your own websites or web applications? Choose this track to learn the most popular development tool suite among programmers around the world. We will cover the basics of JavaScript, HTML, and CSS to discover the power of modern Frontend development.
