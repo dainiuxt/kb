@@ -19,3 +19,5 @@ GitHub - trekhleb/javascript-algorithms:  [Algorithms and data structures implem
 [How to get the most out of the JavaScript console](https://www.freecodecamp.org/news/how-to-get-the-most-out-of-the-javascript-console-b57ca9db3e6d/)
 
 [A deep dive into Javascript Object properties - DEV Community](https://dev.to/mustapha/a-deep-dive-into-javascript-object-properties-598h)
+
+[Here is a list of javascript operator and how to use it!](https://dev.to/codeoz/you-must-store-this-javascript-operator-index-2bec)
