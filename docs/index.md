@@ -6,6 +6,8 @@
 
 > Free Coursera course: 15 hours beginner course. Powerful mental tools to help you master tough subjects.
 
+---
+
 [How to Remember More of What You Learn with Spaced Repetition](https://collegeinfogeek.com/spaced-repetition-memory-technique/)
 
 ---

@@ -2,6 +2,17 @@
 
 [Online Learning: A Bachelor's Level Computer Science Program Curriculum (Updated - Dec 2020)](http://blog.agupieware.com/2014/05/online-learning-bachelors-level.html)
 
+[Teach Yourself Computer Science](https://teachyourselfcs.com/)
+
+> If you’re a self-taught engineer or bootcamp grad, you owe it to yourself to learn computer science. Thankfully, you can give yourself a world-class CS education without investing years and a small fortune in a degree program.
+> 
+> There are plenty of resources out there, but some are better than others. You don’t need yet another “200+ Free Online Courses” listicle. You need answers to these questions:
+> 
+>    - Which subjects should you learn, and why?
+>    - What is the best book or video lecture series for each subject?
+> 
+> This guide is our attempt to definitively answer these questions.
+
 [Full stack open 2021](https://fullstackopen.com/en/)
 
 > This course serves as an introduction to modern web application development with JavaScript. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js. The course also contains a section on GraphQL, a modern alternative to REST APIs.
