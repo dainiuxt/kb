@@ -46,6 +46,14 @@ This is collection of usefull resources to help progress on Your path to become 
 
 ### Reading/Info
 
+[Five books to read for software engineer](https://julianogtz.github.io/my-personal-blog/posts/five-books-that-changed-my-career-as-a-software-engineer)
+
+> 1. The Passionate Programmer: Creating a Remarkable Career in Software Development
+> 2. The Pragmatic Programmer - your journey to mastery(20th Anniversary Edition)
+> 3. Unwritten Laws of Engineering - Second Edition
+> 4. Remote: Office Not Required
+> 5. Explain the Cloud Like I’m 10
+
 [How To Learn Stuff Quickly](https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/)
 
 > It's often said that the internet has democratized education: the sum of human knowledge is only a Google search away! And yet, having access to information is only half of the story; you also need to be able to convert raw information into usable skills.
