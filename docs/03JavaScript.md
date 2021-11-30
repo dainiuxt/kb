@@ -12,6 +12,8 @@
 
 [8 JavaScript Tips & Tricks That No One Teaches  + Giveaway - DEV Community](https://dev.to/garvitmotwani/8-javascript-tips-tricks-that-no-one-teaches-24g1)
 
+[8 Useful JavaScript ES2019 Features to Know About - DEV Community](https://dev.to/alexdevero/8-useful-javascript-es2019-features-to-know-about-29cm)
+
 GitHub - trekhleb/javascript-algorithms:  [Algorithms and data structures implemented in JavaScript with explanations and links to further readings](https://github.com/trekhleb/javascript-algorithms)
 
 [JavaScript map function: Everything you need to know - < Code Topology />](https://codetopology.com/scripts/javascript-tutorials/javascript-map-function/)

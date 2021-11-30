@@ -19,6 +19,10 @@
 >
 > The course covers testing, configuration and environment management, and the use of MongoDB for storing the application’s data.
 
+[ReallyConfused](https://reallyconfused.co/)
+
+> Explore roadmaps on how to break into tech careers using self-study. Understand what courses to take, books to read, projects to build, how to network, and how much money you need to spend to get a job in tech. Then build your own roadmap and crush those long-term goals!
+
 [FreeCodeCamp](https://www.freecodecamp.org/) 
 
 > Learn to Code — For Free — Coding Courses for Busy People. Learn FullStack at your own pace.

@@ -23,3 +23,7 @@
 [Rewriting git history (amend/rebase)](https://dev.to/okimotomizuho/open-source-rewriting-git-historyamendrebase-ada)
 
 [Git rebase tutorial. Rebase vs Merge - video](https://youtu.be/kMvLn8WcAII)
+
+[How to undo a push or merge in Git branch | Level Up Coding](https://levelup.gitconnected.com/git-workflow-devops-69e5a9071be1)
+
+> How to undo a push or merge with Git?

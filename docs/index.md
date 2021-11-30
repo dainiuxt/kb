@@ -60,6 +60,8 @@ This is collection of usefull resources to help progress on Your path to become 
 > 
 > For a lot of us, the gap between the two can lead to things like tutorial hell—getting stuck doing tutorial after tutorial without ever feeling like you're making substantive progress.
 
+[How to Go From Coding Tutorials to Building Apps in 5 Steps - DEV Community](https://dev.to/anxiouswebdev/how-to-go-from-coding-tutorials-to-building-apps-in-5-steps-13pi)
+
 [Useful Resources To Learn Web Development & To Create Your Website](https://apoorvtyagi.tech/useful-resources-to-learn-web-development-and-to-create-your-website)
 
 [Tips You Should know for Visual Studio Code - VSCode](https://dev.to/zahab/6-tips-and-tricks-every-developer-should-know-in-visual-studio-code-48mo)
