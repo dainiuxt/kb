@@ -1,5 +1,7 @@
 # git
 
+[Some lifesaving git commands and what's happening under the hud when executed](https://dev.to/polymathsomnath/git-commands-that-will-save-your-job-14ac)
+
 [Git Explorer](https://gitexplorer.com/): Git Command Explorer. Find the right commands you need without digging through the web.
 
 [Basic git commands](https://dev.to/anisha/basic-git-commands-33ec)
