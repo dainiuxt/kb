@@ -28,6 +28,8 @@
 
 [Native CSS nesting: What you need to know](https://blog.logrocket.com/native-css-nesting/)
 
+[CSS pseudoelements and pseudoclasses](https://www.w3schools.com/css/css_pseudo_elements.asp)
+
 ### CSS templates/boilerplate
 
 [FlowBite](https://flowbite.com/docs/getting-started/introduction/) 
