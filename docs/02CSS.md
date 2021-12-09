@@ -30,6 +30,8 @@
 
 [CSS pseudoelements and pseudoclasses](https://www.w3schools.com/css/css_pseudo_elements.asp)
 
+[Get Comfortable With CSS Selectors](https://cesscode.hashnode.dev/get-comfortable-with-css-selectors)
+
 ### CSS templates/boilerplate
 
 [FlowBite](https://flowbite.com/docs/getting-started/introduction/) 
