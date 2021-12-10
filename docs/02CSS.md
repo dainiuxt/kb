@@ -32,8 +32,4 @@
 
 [Get Comfortable With CSS Selectors](https://cesscode.hashnode.dev/get-comfortable-with-css-selectors)
 
-### CSS templates/boilerplate
-
-[FlowBite](https://flowbite.com/docs/getting-started/introduction/) 
-
-> Open-source collection of UI elements based on the utility-first CSS framework __Tailwind__ designed and coded by Themesberg available in Figma and as web components.
+[Scrollable div layout with height 100%](https://dev.to/harshboricha98/scrollable-div-layout-with-height-100-33jn)

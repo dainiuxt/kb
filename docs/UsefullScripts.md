@@ -1,5 +1,7 @@
 # Scripts & Commands
 
+[Writing a `bash` scripts like a pro](https://dev.to/unfor19/writing-bash-scripts-like-a-pro-part-1-styling-guide-4bin)
+
 Resize multiple graphic files from the command line:
 
 ```bash

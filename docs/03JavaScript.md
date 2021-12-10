@@ -14,7 +14,7 @@
 
 [8 Useful JavaScript ES2019 Features to Know About - DEV Community](https://dev.to/alexdevero/8-useful-javascript-es2019-features-to-know-about-29cm)
 
-GitHub - trekhleb/javascript-algorithms:  [Algorithms and data structures implemented in JavaScript with explanations and links to further readings](https://github.com/trekhleb/javascript-algorithms)
+[Algorithms and data structures implemented in JavaScript with explanations and links to further readings](https://github.com/trekhleb/javascript-algorithms)
 
 [JavaScript map function: Everything you need to know>](https://codetopology.com/scripts/javascript-tutorials/javascript-map-function/)
 
@@ -27,3 +27,5 @@ GitHub - trekhleb/javascript-algorithms:  [Algorithms and data structures implem
 [Slice and Splice JavaScript Arrays Like a Pro](https://dev.to/sumusiriwardana/slice-and-splice-javascript-arrays-like-a-pro-2d9d)
 
 [JavaScript Reduce Method Made Simple](https://blog.alexdevero.com/javascript-reduce-method/)
+
+[How can you check if something is an array?](https://dev.to/schukai/you-are-an-array-25l3)
