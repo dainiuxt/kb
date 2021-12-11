@@ -15,5 +15,4 @@
 
 ## Accessibility
 
-[Accessibility 101](https://dev.to/tabathaslatton/accessibility-101-3ep0
-)
+[Accessibility 101](https://dev.to/tabathaslatton/accessibility-101-3ep0)
