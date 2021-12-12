@@ -6,6 +6,8 @@
 
 [How to Section Your HTML - CSS-Tricks](https://css-tricks.com/how-to-section-your-html/) - practical guide to `semantic HTML`
 
+[A short guide to help you pick the correct HTML tag](https://dev.to/polgarj/a-short-guide-to-help-you-pick-the-correct-html-tag-56l9)
+
 [Conquering Responsive Layouts](https://courses.kevinpowell.co/conquering-responsive-layouts)
 
 > Start creating responsive layouts with confidence!

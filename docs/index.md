@@ -30,7 +30,7 @@ This is collection of usefull resources to help progress on Your path to become 
 
 ### General resources
 
-[A short guide to help you pick the correct HTML tag](https://dev.to/polgarj/a-short-guide-to-help-you-pick-the-correct-html-tag-56l9)
+[Use DevTools like a PRO](https://christianheilmann.com/2021/11/01/developer-tools-secrets-that-shouldnt-be-secrets/)
 
 [Free hosting services for web developers - DEV Community](https://dev.to/josiasaurel/free-hosting-services-for-web-developers-3n4g)
 
