@@ -17,3 +17,5 @@ cd /mywebapp/static/img/
 mkdir webp        
 for file in *.{jpg,png,jpeg}; do cwebp -q 60 ${file} -o webp/${file}.webp; done;
 ```
+
+[Linux commands for optimizing web images](https://opensource.com/article/21/12/optimize-web-images-linux)
