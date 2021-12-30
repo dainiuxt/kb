@@ -11,3 +11,23 @@
 [Learn Python from scratch](https://futurecoder.io/) Free OpenSource interactive online course.
 
 [Do Python One-Liners Make Your Code Faster? - YES They Do!](https://dev.to/naveenkumarmd/do-python-one-liners-make-your-code-faster-514f)
+
+[Implementing RSA in Python from Scratch (Part 1)](https://coderoasis.com/implementing-rsa-from-scratch-in-python/)
+
+[Python programs, usually short, of considerable difficulty, to perfect particular skills.](https://github.com/norvig/pytudes)
+
+> "An étude (a French word meaning study) is an instrumental musical composition, usually short, of considerable difficulty, and designed to provide practice material for perfecting a particular musical skill." — Wikipedia
+> 
+> This project contains pytudes—Python programs, usually short, for perfecting particular programming skills.
+
+## CheatSheets
+
+[Comprehensive Python Cheatsheet](https://gto76.github.io/python-cheatsheet/)
+
+[Python For Data Science - A Cheat Sheet For Beginners](https://www.datacamp.com/community/tutorials/python-data-science-cheat-sheet-basics)
+
+[Pandas Cheat Sheet for Data Science in Python](https://www.datacamp.com/community/blog/python-pandas-cheat-sheet)
+
+[NumPy Cheat Sheet: Data Analysis in Python](https://www.datacamp.com/community/blog/python-numpy-cheat-sheet)
+
+[Matplotlib Cheat Sheet: Plotting in Python](https://www.datacamp.com/community/blog/python-matplotlib-cheat-sheet)
