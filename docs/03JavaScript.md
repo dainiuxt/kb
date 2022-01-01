@@ -12,6 +12,8 @@
 
 [JavaScript Modules – A Beginner's Guide](https://www.freecodecamp.org/news/javascript-modules-beginners-guide/)
 
+[JavaScript Fetch API](https://www.javascripttutorial.net/javascript-fetch-api/)
+
 [ES6 Handbook: Everything You Need to Know](https://dev.to/shreya/es6-handbook-everything-you-need-to-know-1ea7)
 
 [What is localStorage? - DEV Community](https://dev.to/tolentinoel/what-is-localstorage-3ffh)

@@ -12,10 +12,6 @@
 
 ---
 
-If you like what you see here, you can buy me a coffee. Thanks!
-
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="anthroposamu" data-color="#222" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
-
 This is collection of usefull resources to help progress on Your path to become a Web Developer.
 
 [Tech Interview HandBook](https://techinterviewhandbook.org/)
@@ -77,3 +73,9 @@ This is collection of usefull resources to help progress on Your path to become 
 [Everything You Need to Know About Forming a Professional Support Network - CodeNewbie Community](https://community.codenewbie.org/theoriginalbpc/everything-you-need-to-know-about-forming-a-professional-support-network-4c45)
 
 [17 Website Templates HTML Free Download - DEV Community](https://dev.to/afif/border-with-gradient-and-radius-387f)
+
+---
+
+If you like what you see here, you can buy me a coffee. Thanks!
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="anthroposamu" data-color="#222" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>

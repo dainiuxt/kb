@@ -38,6 +38,13 @@
 
 [Scrollable div layout with height 100%](https://dev.to/harshboricha98/scrollable-div-layout-with-height-100-33jn)
 
+## CSS Tools
+
+[Useful CSS tools and resources to boost your productivity](https://blog.devgenius.io/9-awesome-css-tools-that-you-should-use-in-2022-2155eed03c4c)
+
+[Utopia - fluid responsive design](https://utopia.fyi/)
+
+[Minimal snippets for modern CSS layouts and components](https://smolcss.dev/)
 
 ## Frameworks
 
