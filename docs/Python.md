@@ -6,6 +6,8 @@
 
 [Python Best Practices for a New Project in 2021](https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/)
 
+[Date and time localization methods in Python](https://lokalise.com/blog/date-time-localization/)
+
 [GitHub - trekhleb/learn-python](https://github.com/trekhleb/learn-python): Playground and cheatsheet for learning Python. Collection of Python scripts that are split by topics and contain code examples with explanations.
 
 [Learn Python from scratch](https://futurecoder.io/) Free OpenSource interactive online course.
@@ -15,6 +17,8 @@
 [Implementing RSA in Python from Scratch (Part 1)](https://coderoasis.com/implementing-rsa-from-scratch-in-python/)
 
 [Learn Python ASTs, by building your own linter](https://sadh.life/post/ast/)
+
+[Python args and kwargs: Demystified](https://realpython.com/python-kwargs-and-args/)
 
 [Python programs, usually short, of considerable difficulty, to perfect particular skills.](https://github.com/norvig/pytudes)
 
