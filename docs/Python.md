@@ -1,5 +1,7 @@
 # Python
 
+[Django Admin Cookbook](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/index.html)
+
 [Setting up the Python environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
 [How To Use a .env File With Python](https://lovelacecoding.hashnode.dev/how-to-use-a-env-file-with-python)
@@ -27,6 +29,8 @@
 > This project contains pytudes—Python programs, usually short, for perfecting particular programming skills.
 
 ## CheatSheets
+
+[Python code examples](https://python.hotexamples.com/examples/django.contrib.auth.models/User/get_full_name/python-user-get_full_name-method-examples.html)
 
 [Comprehensive Python Cheatsheet](https://gto76.github.io/python-cheatsheet/)
 

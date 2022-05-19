@@ -54,3 +54,5 @@
 > After completing this curriculum you’ll have a basic understanding how browsers talk to web applications, and how web applications respond. You’ll be able to generate dynamic web pages, and build simple web applications.
 
 [FOSS Academy](https://academy.itsfoss.com/)
+
+[15 free Python courses for beginners](https://www.freecodecamp.org/news/learn-python-free-python-courses-for-beginners/)
