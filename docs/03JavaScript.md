@@ -1,5 +1,11 @@
 # JavaScript/ES6
 
+## Usefull tools
+
+[JavaScript Booster - VSCode extension](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster)
+
+> This VS Code extension provides various code actions (quick fixes) when editing code in JavaScript (or TypeScript/Flow). Just note the light bulb at the left and press it to learn how you can transform the code under the cursor.
+
 ## Vanilla JavaScript
 
 [Eloquent JavaScript 3rd edition (2018)](https://eloquentjavascript.net/index.html)

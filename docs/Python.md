@@ -1,10 +1,14 @@
 # Python
 
+[Django Admin Cookbook](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/index.html)
+
 [Setting up the Python environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
 [How To Use a .env File With Python](https://lovelacecoding.hashnode.dev/how-to-use-a-env-file-with-python)
 
 [Python Best Practices for a New Project in 2021](https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/)
+
+[Date and time localization methods in Python](https://lokalise.com/blog/date-time-localization/)
 
 [GitHub - trekhleb/learn-python](https://github.com/trekhleb/learn-python): Playground and cheatsheet for learning Python. Collection of Python scripts that are split by topics and contain code examples with explanations.
 
@@ -16,6 +20,8 @@
 
 [Learn Python ASTs, by building your own linter](https://sadh.life/post/ast/)
 
+[Python args and kwargs: Demystified](https://realpython.com/python-kwargs-and-args/)
+
 [Python programs, usually short, of considerable difficulty, to perfect particular skills.](https://github.com/norvig/pytudes)
 
 > "An étude (a French word meaning study) is an instrumental musical composition, usually short, of considerable difficulty, and designed to provide practice material for perfecting a particular musical skill." — Wikipedia
@@ -23,6 +29,8 @@
 > This project contains pytudes—Python programs, usually short, for perfecting particular programming skills.
 
 ## CheatSheets
+
+[Python code examples](https://python.hotexamples.com/examples/django.contrib.auth.models/User/get_full_name/python-user-get_full_name-method-examples.html)
 
 [Comprehensive Python Cheatsheet](https://gto76.github.io/python-cheatsheet/)
 

@@ -15,6 +15,8 @@
 
 [10 Helpful Native Web APIs Every New JavaScript Developer Should Know](https://www.telerik.com/blogs/angular-basics-10-helpful-native-web-apis-every-new-javascript-developer-should-know)
 
+[Those HTML Attributes You Never Use — Smashing Magazine](https://www.smashingmagazine.com/2022/03/html-attributes-you-never-use/)
+
 ## Accessibility
 
 [Accessibility 101](https://dev.to/tabathaslatton/accessibility-101-3ep0)

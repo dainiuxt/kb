@@ -13,6 +13,10 @@
 > 
 > This guide is our attempt to definitively answer these questions.
 
+[Web-Dev-For-Beginners: 24 Lessons, 12 Weeks, Get Started as a Web Developer](https://github.com/microsoft/Web-Dev-For-Beginners)
+
+> 24 Lessons, 12 Weeks, Get Started as a Web Developer 
+
 [Full stack open 2021](https://fullstackopen.com/en/)
 
 > This course serves as an introduction to modern web application development with JavaScript. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js. The course also contains a section on GraphQL, a modern alternative to REST APIs.
@@ -50,3 +54,5 @@
 > After completing this curriculum you’ll have a basic understanding how browsers talk to web applications, and how web applications respond. You’ll be able to generate dynamic web pages, and build simple web applications.
 
 [FOSS Academy](https://academy.itsfoss.com/)
+
+[15 free Python courses for beginners](https://www.freecodecamp.org/news/learn-python-free-python-courses-for-beginners/)

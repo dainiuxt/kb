@@ -38,6 +38,8 @@
 
 [Scrollable div layout with height 100%](https://dev.to/harshboricha98/scrollable-div-layout-with-height-100-33jn)
 
+[CSS tips on Images you need to know](https://dev.to/fidalmathew/css-tips-on-images-you-need-to-know-33b1)
+
 ## CSS Tools
 
 [Useful CSS tools and resources to boost your productivity](https://blog.devgenius.io/9-awesome-css-tools-that-you-should-use-in-2022-2155eed03c4c)
