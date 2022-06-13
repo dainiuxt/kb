@@ -1,6 +1,18 @@
-# Tools
+# Tools and Utilities
 
-[Best Online Tools | 10015 Tools](https://10015.io/) Build anything online with “all-in-one toolbox”. All tools are easy-to-use, blazing fast & free.
+[Generate random user profile pictures and names](https://xsgames.co/randomusers/)
+
+> Generate random user profile pictures and names to use
+> them as placeholders for your prototypes and design projects
+
+[#HEXWORDS](https://hexwords.netlify.app/)
+
+> Why bother with a random green when you can choose to be a #BADA55!
+
+
+[Best Online Tools | 10015 Tools](https://10015.io/)
+
+> Build anything online with “all-in-one toolbox”. All tools are easy-to-use, blazing fast & free.
 
 [Interactive CSS Grid Generator | Layoutit Grid](https://grid.layoutit.com/)
 
