@@ -10,3 +10,8 @@ Ideas for projects to build for your portfolio.
 
 > Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs. Join 234,822 developers building projects, reviewing code, and helping each other get better.
 
+[How to create a dashboard in Python with Jupyter Notebook?](https://mljar.com/blog/dashboard-python-jupyter-notebook/)
+
+> The demo of the financial dashboard created in Python with Jupyter Notebook and published with Mercury
+
+[A collective list of free APIs](https://github.com/public-apis/public-apis#anti-malware)

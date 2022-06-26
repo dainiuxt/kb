@@ -2,6 +2,8 @@
 
 [Django Admin Cookbook](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/index.html)
 
+[Six things to do every time I start a Django project](https://brntn.me/blog/six-things-i-do-every-time-i-start-a-django-project/)
+
 [Setting up the Python environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
 [How To Use a .env File With Python](https://lovelacecoding.hashnode.dev/how-to-use-a-env-file-with-python)
