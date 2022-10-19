@@ -1,5 +1,11 @@
 # Python
 
+[To Ruby From Python](https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-python/)
+
+> Python is another very nice general purpose programming language. Going from Python to Ruby, you’ll find that there’s a little bit more syntax to learn than with Python.
+
+[The Hitchhiker's Guide to Python](https://docs.python-guide.org/writing/gotchas/)
+
 [Django Admin Cookbook](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/index.html)
 
 [Six things to do every time I start a Django project](https://brntn.me/blog/six-things-i-do-every-time-i-start-a-django-project/)

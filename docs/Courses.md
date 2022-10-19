@@ -13,6 +13,10 @@
 > 
 > This guide is our attempt to definitively answer these questions.
 
+[Learn PWA](https://web.dev/learn/pwa/)
+
+> This course covers the fundamentals of Progressive Web App development into easy-to-understand pieces. Over the following modules, you'll learn what a Progressive Web App is, how to create one or upgrade your existing web content, and how to add all the pieces for an offline, installable app. Use the menu pane by the "Learn PWA" logo to navigate the modules.
+
 [Web-Dev-For-Beginners: 24 Lessons, 12 Weeks, Get Started as a Web Developer](https://github.com/microsoft/Web-Dev-For-Beginners)
 
 > 24 Lessons, 12 Weeks, Get Started as a Web Developer 

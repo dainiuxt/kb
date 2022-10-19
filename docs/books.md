@@ -1,5 +1,7 @@
 # Books
 
+[A lot of books from Flavio](https://thevalleyofcode.com/) - JavaScript, Python, C, Linux, HTML, CSS, Node.js, React, Next.js, PHP. Available online and download pdf/ePUB.
+
 [JavaScript for impatient programmers (ES2021 edition)](https://exploringjs.com/impatient-js/index.html)
 
 [Code Simplicity: The Fundamentals of Software (Free eBook) » Code Simplicity](https://www.codesimplicity.com/book/)
@@ -14,3 +16,4 @@
 
 [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/?s=09)
 
+[The Hitchhiker's Guide to Python](https://docs.python-guide.org/writing/gotchas/)

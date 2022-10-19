@@ -1,8 +1,14 @@
 # Resources
 
+### Career management
+
+[Eastern European Guide to Writing Reference Letters](https://www.inference.vc/the-east-european-guide-to-writing-reference-letters/)
+
 ### General resources
 
 This is collection of usefull resources to help progress on Your path to become a Web Developer.
+
+[How to Design Programs, Second Edition](https://htdp.org/2022-6-7/Book/index.html)
 
 [Tech Interview HandBook](https://techinterviewhandbook.org/)
 
@@ -15,6 +21,12 @@ This is collection of usefull resources to help progress on Your path to become 
 [W3schools](https://www.w3schools.com/tags/default.asp)
 
 ### Variuos resources
+
+[Free for developers](https://free-for.dev/#/)
+
+> Developers and Open Source authors now have a massive amount of services offering free tiers, but it can be hard to find them all to make informed decisions.
+> 
+> This is a list of software (SaaS, PaaS, IaaS, etc.) and other offerings that have free tiers for developers.
 
 [Use DevTools like a PRO](https://christianheilmann.com/2021/11/01/developer-tools-secrets-that-shouldnt-be-secrets/)
 

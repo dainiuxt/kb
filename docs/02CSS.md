@@ -6,6 +6,11 @@
 
 > Writing CSS has probably never been more fun and exciting than it is today. In this post we’ll take a look at common problems and use cases we all have to face in our work and how to solve them with modern CSS. If you’re interested, we’ve also just recently covered CSS auditing tools, CSS generators, front-end boilerplates and VS code extensions — you might find them useful, too.
 
+[The Complete Guide to the Dark Mode Toggle](https://ryanfeigenbaum.com/dark-mode/)
+
+> This complete guide to the dark mode toggle includes best practices for implementing a color mode switcher on your website using custom variables, prefers-color-scheme, and more, all with a very pretty demo!
+
+
 [Extensive CSS guide](https://ishadeed.com/article/defensive-css/)
 
 [What do I need to read to be a great at CSS?](https://www.baldurbjarnason.com/2021/what-do-i-need-to-read-to-be-a-css-dev/)
