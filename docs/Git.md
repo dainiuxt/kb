@@ -2,6 +2,8 @@
 
 [Some lifesaving git commands and what's happening under the hud when executed](https://dev.to/polymathsomnath/git-commands-that-will-save-your-job-14ac)
 
+[Git In Two Minutes (for a solo developer) - Gary Robinson's Rants](https://www.garyrobinson.net/2014/10/git-in-two-minutes-for-a-solo-developer.html)
+
 [Oh Shit, Git!?!](https://ohshitgit.com/)
 
 > Git is hard: screwing up is easy, and figuring out how to fix your mistakes is fucking impossible. Git documentation has this chicken and egg problem where you can't search for how to get yourself out of a mess, unless you already know the name of the thing you need to know about in order to fix your problem.
