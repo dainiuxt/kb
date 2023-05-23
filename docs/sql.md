@@ -1,5 +1,7 @@
 # SQL
 
+['Can I Use' for SQL](https://modern-sql.com/)
+
 [DbGate Open Source (no)SQL Database Client](https://dbgate.org/)
 
 [Extensive SQL documentation](https://www.javatpoint.com/mysql-tutorial)

@@ -1,5 +1,10 @@
 # Books
 
+[How to Design Programs, Second Edition](https://htdp.org/2023-3-6/Book/index.html)
+
+> Matthias Felleisen, Robert Bruce Findler, Matthew Flatt, Shriram Krishnamurthi
+
+
 [A lot of books from Flavio](https://thevalleyofcode.com/) - JavaScript, Python, C, Linux, HTML, CSS, Node.js, React, Next.js, PHP. Available online and download pdf/ePUB.
 
 [JavaScript for impatient programmers (ES2021 edition)](https://exploringjs.com/impatient-js/index.html)
@@ -17,3 +22,5 @@
 [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/?s=09)
 
 [The Hitchhiker's Guide to Python](https://docs.python-guide.org/writing/gotchas/)
+
+[Programming Languages: Application and Interpretation](https://www.plai.org/), often referred to by its initials as PLAI (pronounce it like “play”). Over the years well over fifty academic institutions have used PLAI.

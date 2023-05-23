@@ -8,6 +8,8 @@
 
 > rbenv lets you manage installations of multiple Ruby versions.
 
+[Logging in Rails](https://blog.appsignal.com/2023/03/01/making-the-most-of-your-logs-in-rails.html)
+
 [FREE resources to help you get started in just under 6 hours...](https://dev.to/thecodepixi/a-ruby-on-rails-roadmap-34i4)
 
 [I Love Ruby: Get started with the greatest programming language made for humans.](https://i-love-ruby.gitlab.io/)
@@ -34,3 +36,16 @@
 [Rails Wizards](https://jonsully.net/blog/rails-wizards-part-one/)
 
 [Rename an ActiveRecord model](https://marouenbousnina.com/tutorials/2018-06-11-rename-activerecord-model/)
+
+## Ruby/Rails courses
+
+[Learn Hotwire by Building a Forum](https://store.afomera.dev/view/courses/learn-hotwire/681541-getting-started/1974282-bootstrapping-our-rails-app)
+
+[Learn Hotwire and Turbo with a free Rails 7 tutorial](https://www.hotrails.dev/turbo-rails)
+
+> Turbo Rails and Turbo Streams Tutorial
+> Learn how to leverage the power of the turbo-rails library now included by default in Rails 7 to write reactive single-page applications without having to write a single line of custom JavaScript.
+
+[Can You Build a Web Application in Ruby Without Rails?](https://www.akshaykhot.com/building-web-application-without-rails/)
+
+> This is the third article in the series on building awesome web applications with Rails. It shows how to build a simple web app in Ruby from scratch, without using Rails.

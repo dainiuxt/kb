@@ -13,6 +13,10 @@
 > 
 > This guide is our attempt to definitively answer these questions.
 
+[CMU CS Academy](https://academy.cs.cmu.edu/)
+
+> CMU CS Academy is an online, graphics-based computer science curriculum taught in Python provided by Carnegie Mellon University. We create novel, world-class Computer Science education for your classroom —and it’s entirely free.
+
 [Learn PWA](https://web.dev/learn/pwa/)
 
 > This course covers the fundamentals of Progressive Web App development into easy-to-understand pieces. Over the following modules, you'll learn what a Progressive Web App is, how to create one or upgrade your existing web content, and how to add all the pieces for an offline, installable app. Use the menu pane by the "Learn PWA" logo to navigate the modules.
