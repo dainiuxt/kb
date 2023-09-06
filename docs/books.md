@@ -24,3 +24,7 @@
 [The Hitchhiker's Guide to Python](https://docs.python-guide.org/writing/gotchas/)
 
 [Programming Languages: Application and Interpretation](https://www.plai.org/), often referred to by its initials as PLAI (pronounce it like “play”). Over the years well over fifty academic institutions have used PLAI.
+
+[Online release of Data-Oriented Design ](https://www.dataorienteddesign.com/dodbook/node1.html)
+
+> This is the free, online, reduced version. Some inessential chapters are excluded from this version, but in the spirit of this being an education resource, the essentials are present for anyone wanting to learn about data-oriented design.
