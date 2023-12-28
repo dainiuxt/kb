@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../VPS/">
+        <link rel="prev" href="../Courses/">
       
       
-        <link rel="next" href="../books/">
+        <link rel="next" href="../Datascience/">
       
       <link rel="icon" href="../img/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
     
     
       
-        <title>Video lessons - WebDev KB</title>
+        <title>DNS Management - WebDev KB</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#video-lessons" class="md-skip">
+        <a href="#dns-management" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Video lessons
+              DNS Management
             
           </span>
         </div>
@@ -350,11 +350,21 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../DNS_Records/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         DNS Management
       </a>
+      
     </li>
   
 
@@ -530,21 +540,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Videolessons/" class="md-nav__link">
         Video lessons
       </a>
-      
     </li>
   
 
@@ -820,14 +820,29 @@
 
 
 
-<h1 id="video-lessons">Video lessons</h1>
-<p><a href="https://www.freecodecamp.org/news/web-applications-for-everybody-dr-chuck/">Web Applications for Everybody - Dr. Chuck Teaches HTML, JavaScript, PHP, SQL, and More</a> - 14 hours video ahead. Make yourself some tea and... Don't panic, Starman!</p>
-<p><a href="https://www.youtube.com/watch?v=UB1O30fR-EE">HTML</a></p>
-<p><a href="https://www.youtube.com/watch?v=yfoY53QXEnI">CSS</a></p>
-<p><a href="https://youtu.be/HXNhEYqFo0o">Loops vs recursion</a></p>
-<p><a href="https://dev.to/dev_elie/connecting-a-react-frontend-to-a-flask-backend-h1o">Connecting React Frontent to Flask (python) backend</a></p>
-<p><a href="https://www.youtube.com/watch?v=Uszj_k0DGsg&amp;list=PL_FE-6TDRvPVNeamKYktRt5nPaVwkpXY6&amp;index=5&amp;t=459s">Git for Professionals Tutorial - Tools &amp; Concepts for Mastering Version Control with Git - YouTube</a></p>
-<p><a href="https://www.youtube.com/watch?v=ciNHn38EyRc">SQL injection</a></p>
+<h1 id="dns-management">DNS Management</h1>
+<p>DNS propagation is the time it takes for changes made to a domain’s DNS records to take effect across the internet. When you make a change to a domain’s DNS settings, it can take some time for that change to be reflected everywhere on the internet. This is because DNS records are cached on different servers all over the world, and it takes time for those servers to update their records.</p>
+<p>Why Should I Care About DNS Propagation?</p>
+<p>You might not need to worry about DNS propagation if you’re just a casual internet user. But if you’re responsible for managing a website or domain, then it’s important to understand how DNS propagation works, because it can affect how quickly your changes take effect.</p>
+<p>For example, if you’re transferring a domain to a new web hosting provider, it’s important to be aware of how long the DNS propagation will take, so that you can plan accordingly. If you’re not aware of DNS propagation, you might assume that the changes you’ve made to your domain’s DNS settings will have taken effect immediately, when in reality it could take several hours – or even longer – for the changes to be fully propagated across the internet. This can lead to confusion, and potentially cause problems for your website or domain.
+How To Propagate Changes Faster
+Method 1: Reduce time-to-live (TTL) Value </p>
+<p>The best way to speed up DNS propagation is to reduce the time-to-live (TTL) value for your DNS records. This tells DNS resolvers how long to cache your DNS records, so reducing the TTL value will ensure that DNS resolvers refresh your records more often, which can speed up the propagation process. </p>
+<p>However, this comes with a few downsides:</p>
+<p>If the DNS records for your website expire quickly, it can cause your site to appear slow to visitors, because their browsers will have to fetch new records more frequently, which takes time. This can be frustrating for users, and make them less likely to continue using your site. 
+It can lead to an increase in the number of requests sent to your DNS authoritative resolver. If you maintain your own servers, this can put additional strain on your system, potentially increasing hosting costs and server charges. </p>
+<p>If you plan ahead of time, you can avoid this by temporarily reducing the TTL values of your DNS record one day before you plan to make changes. This will ensure that all the records will expire quickly when you want them to.</p>
+<p>For example, if your DNS records have the TTL value of 1 day, then you can change it to 5 minutes the day before. On the next day, you can change the DNS records to point to new servers. This will ensure that all the new visitors will be sent to your new server within 5 minutes of making the changes. Once you are satisfied that everything works as expected, you can increase the TTL value back to 1 day.</p>
+<p>Method 2: Request DNS Resolvers To Flush Cache</p>
+<p>If you didn’t plan ahead of time, and you need to update your DNS records immediately, then you can request DNS resolvers to flush cache values of your records, and update them with new existing values. Here are the links for some of the major DNS providers:</p>
+<p><a href="https://1.1.1.1/purge-cache/">Cloudflare</a></p>
+<p><a href="https://developers.google.com/speed/public-dns/cache">Google</a></p>
+<p><a href="https://cachecheck.opendns.com/">OpenDNS</a></p>
+<p>Although flushing the cache from these servers will update the records for the vast majority of users on the internet, many technology enthusiasts and enterprise clients who have the time and resources to maintain their own DNS servers will still have a stale copy of your DNS records until it expires. 
+Check If DNS Records Were Updated Successfully
+Method 1: Use A DNS Propagation Checker </p>
+<p>You can use a DNS propagation checker to monitor the progress of your DNS changes. These tools can help you track when your changes have been picked up by different DNS resolvers around the world, so you can see how quickly the propagation process is progressing. </p>
+<p><a href="https://www.site24x7.com/tools/dns-propagation.html">Site24x7’s DNS Propagation Checker which checks the DNS records of a given address against multiple nameservers from different parts of the world</a></p>
 
 
 
