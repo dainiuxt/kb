@@ -1,0 +1,1457 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../00Resources/">
+      
+      
+        <link rel="next" href="../01HTML/">
+      
+      <link rel="icon" href="../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
+    
+    
+      
+        <title>Server Setup Basics - WebDev KB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0d440cfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#server-setup-basics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="WebDev KB" class="md-header__button md-logo" aria-label="WebDev KB" data-md-component="logo">
+      
+  <img src="../img/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WebDev KB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Server Setup Basics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dainiuxt/kb" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dainiuxt/kb
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="WebDev KB" class="md-nav__button md-logo" aria-label="WebDev KB" data-md-component="logo">
+      
+  <img src="../img/favicon.png" alt="logo">
+
+    </a>
+    WebDev KB
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dainiuxt/kb" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dainiuxt/kb
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Knowledge Base
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00CoreProgrammingConcepts/" class="md-nav__link">
+        Basic Programming Knowledge
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00ProjectIdeas/" class="md-nav__link">
+        Project ideas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00Resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Server Setup Basics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Server Setup Basics
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ssh" class="md-nav__link">
+    SSH
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    Users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logs" class="md-nav__link">
+    Logs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backups" class="md-nav__link">
+    Backups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-network-safety" class="md-nav__link">
+    Basic Network Safety
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ufw" class="md-nav__link">
+    UFW
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fail2ban" class="md-nav__link">
+    Fail2Ban
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx" class="md-nav__link">
+    NGINX
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-of-life-tools" class="md-nav__link">
+    Quality Of Life Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns" class="md-nav__link">
+    DNS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Docker
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker-pros" class="md-nav__link">
+    Docker Pros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-cons" class="md-nav__link">
+    Docker Cons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wrap-up" class="md-nav__link">
+    Wrap Up
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01HTML/" class="md-nav__link">
+        HTML
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02CSS/" class="md-nav__link">
+        CSS
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03JavaScript/" class="md-nav__link">
+        JavaScript/ES6
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Courses/" class="md-nav__link">
+        Courses
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DNS_Records/" class="md-nav__link">
+        DNS Management
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Datascience/" class="md-nav__link">
+        Data science
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Docker/" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Git/" class="md-nav__link">
+        git
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Practice/" class="md-nav__link">
+        Tasks/Practice
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Python/" class="md-nav__link">
+        Python
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ReusableElements/" class="md-nav__link">
+        Reusable Elements
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RubyRails/" class="md-nav__link">
+        Ruby / Ruby on Rails
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TailwindCSS/" class="md-nav__link">
+        Tailwind CSS
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tools/" class="md-nav__link">
+        Tools and Utilities
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UsefullScripts/" class="md-nav__link">
+        bash/shell
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VPS/" class="md-nav__link">
+        VPS
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Videolessons/" class="md-nav__link">
+        Video lessons
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/" class="md-nav__link">
+        Books
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sql/" class="md-nav__link">
+        DB and SQL
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zhelpedit/" class="md-nav__link">
+        Admin links
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_26" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_26" id="__nav_26_label" tabindex="0">
+          Cheat Sheets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_26_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_26">
+          <span class="md-nav__icon md-icon"></span>
+          Cheat Sheets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cheat%20Sheets/JavaScript/" class="md-nav__link">
+        JavaScript
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_27" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_27" id="__nav_27_label" tabindex="0">
+          Code Snippets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_27_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_27">
+          <span class="md-nav__icon md-icon"></span>
+          Code Snippets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Code%20Snippets/html/" class="md-nav__link">
+        HTML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Code%20Snippets/js/" class="md-nav__link">
+        JavaScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Code%20Snippets/ruby/" class="md-nav__link">
+        Ruby/Rails
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Code%20Snippets/sql/" class="md-nav__link">
+        SQL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_28" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_28" id="__nav_28_label" tabindex="0">
+          Fun Corner
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_28_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_28">
+          <span class="md-nav__icon md-icon"></span>
+          Fun Corner
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fun%20Corner/perlisms/" class="md-nav__link">
+        Perlisms
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ssh" class="md-nav__link">
+    SSH
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    Users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logs" class="md-nav__link">
+    Logs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backups" class="md-nav__link">
+    Backups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-network-safety" class="md-nav__link">
+    Basic Network Safety
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ufw" class="md-nav__link">
+    UFW
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fail2ban" class="md-nav__link">
+    Fail2Ban
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx" class="md-nav__link">
+    NGINX
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-of-life-tools" class="md-nav__link">
+    Quality Of Life Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns" class="md-nav__link">
+    DNS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Docker
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker-pros" class="md-nav__link">
+    Docker Pros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-cons" class="md-nav__link">
+    Docker Cons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wrap-up" class="md-nav__link">
+    Wrap Up
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+<h1 id="server-setup-basics">Server Setup Basics</h1>
+<p><a href="https://becomesovran.com/blog/server-setup-basics.html">Original post</a></p>
+<p>This is a post I've been meaning to do for a while. While it's simple to explain how to set up an app for self-hosting, it's pointless to host an app on a weak foundation. It's a massive pain in my ass to start every how to with a section on server setup, so I'm also making this post for myself as a reference on how I like to set up a server for apps I'm hosting. I'll start with basic stuff like proper login with SSH and non-root user set up and making users for each app. I'll also touch on NGINX setup, some quality of life tools that make server management easier, log management and basic network security.<br />
+‍  </p>
+<ul>
+<li><a href="#server-setup-basics">Server Setup Basics</a></li>
+<li><a href="#ssh">SSH</a></li>
+<li><a href="#users">Users</a></li>
+<li><a href="#logs">Logs</a></li>
+<li><a href="#backups">Backups</a></li>
+<li><a href="#basic-network-safety">Basic Network Safety</a></li>
+<li><a href="#ufw">UFW</a></li>
+<li><a href="#fail2ban">Fail2Ban</a></li>
+<li><a href="#nginx">NGINX</a></li>
+<li><a href="#quality-of-life-tools">Quality Of Life Tools</a></li>
+<li><a href="#dns">DNS</a></li>
+<li><a href="#docker">Docker</a><ul>
+<li><a href="#docker-pros"><strong>Docker Pros</strong></a></li>
+<li><a href="#docker-cons"><strong>Docker Cons</strong></a></li>
+</ul>
+</li>
+<li><a href="#wrap-up">Wrap Up</a></li>
+</ul>
+<h2 id="ssh">SSH</h2>
+<p>First is login. You’ll need a way to access your device securely. Don't even mess with username and password. You want to use SSH (Secure Shell) and make sure that SSH is the only way to log in. To do that, you’ll need an SSH key and a new user account. On a newly provisioned VPS, you'll be logged in as root, and you want to protect the root account. First off on the VPS or remote machine make a new regular user with and add them to the “sudo” group with:</p>
+<div class="highlight"><pre><span></span><code>sudo adduser newuser
+
+sudo usermod -aG sudo newuser
+</code></pre></div>
+<p>Now on your local machine run:  </p>
+<div class="highlight"><pre><span></span><code>ssh-keygen -t ed25519 -C &quot;[email protected]&quot;
+</code></pre></div>
+<p>Follow the instructions, it should ask you where you want to save the file and if you want a password or not. Make sure you set a string one. To copy the public key over to your server run on your local machine:</p>
+<div class="highlight"><pre><span></span><code>ssh-copy-id -i ~/.ssh/id_ed25519.pub newuser@your_server_ip
+</code></pre></div>
+<p>Keep in mind newuser@your-server-ip is the username and the remote device you are trying to copy your public key into. When you get prompted for a password, it will be the password for the account on the remote device, NOT the password you just made for the SSH key. Once verified, it will copy over the public key, and you can now log in Via SSH. To turn off username and password login, type in:<br />
+‍</p>
+<div class="highlight"><pre><span></span><code>sudo nano /etc/ssh/sshd_config
+</code></pre></div>
+<p>Find these values and set them as you see them here.<br />
+‍</p>
+<div class="highlight"><pre><span></span><code>Port 2222     # Change default port (use a number between 1024 and 65535)
+PermitRootLogin no                 # Disable root login
+PasswordAuthentication no          # Disable password authentication
+PubkeyAuthentication yes           # Enable public key authentication
+AuthorizedKeysFile .ssh/authorized_keys # Specify authorized_keys file location
+AllowUsers newuser                 # Only allow specific users to login
+</code></pre></div>
+<p>This disallows every login method besides SSH under the user you copied your public key to. Stops login as Root and only allows the user you specify to log in. Hit CTL+S to save and CTL+x to get out of the file editor. Restart SSH:<br />
+‍  </p>
+<div class="highlight"><pre><span></span><code>sudo service ssh restart
+</code></pre></div>
+<p>This might boot you out of the session. If it does, this is a good time to test the other login methods to see if they are declined before continuing. Also, it should go without saying, but you need to keep the private key safe and if you lose it you will not be able to get in remotely anymore.You can further lock down your login with:<br />
+‍</p>
+<div class="highlight"><pre><span></span><code>Protocol 2                 # Use only SSH protocol version 2
+MaxAuthTries 3             # Limit authentication attempts
+ClientAliveInterval 300    # Client alive interval in seconds
+ClientAliveCountMax 2      # Maximum client alive count
+</code></pre></div>
+<p>Now, let's dive into users a bit more and see how we can leverage them for a bit of organization and security.</p>
+<h2 id="users">Users</h2>
+<p>Users are important when it comes to managing a Linux server. There is an idea in server management called the “Principle of The Least Privilege” this basically means that you want to give an app or process the minimum amount of privileges that it needs to do its job. Root has unlimited power, and no app really needs this. Making a user for apps that you're running accomplishes a few things. It can limit potential damage if an application you are running is compromised. It adds isolation when running more than one app, it helps with auditing so you know what app is using what system resources.  </p>
+<p>In short, users are a great way of helping organize your system and helps you troubleshoot if and when things go wrong. To add a new user, run:<br />
+‍</p>
+<div class="highlight"><pre><span></span><code>sudo useradd -rms /usr/sbin/nologin -c &quot;a comment&quot; youruser
+</code></pre></div>
+<p>This command makes a user and gives them a home directory for app data but does not allow login as the user. The -c flag is optional, but It's nice to know what the user is for, like “Running Nextcloud” or whatever. Clone app files into the /opt directory with:<br />
+‍</p>
+<div class="highlight"><pre><span></span><code>sudo mkdir /opt/myapp
+</code></pre></div>
+<p>This command makes a user and gives them a home directory for app data but does not allow login as the user. The -c flag is optional, but It's nice to know what the user is for, like “Running Nextcloud” or whatever. Clone app files into the /opt directory with:<br />
+‍</p>
+<div class="highlight"><pre><span></span><code>sudo chown appuser:appuser /opt/myapp
+</code></pre></div>
+<p>Ok, with this your login is locked down, and you should have a decent idea about how to use users. Next is logs.<br />
+‍</p>
+<h2 id="logs">Logs</h2>
+<p>Logs are crucial to system administration. They keep track of system health, help troubleshoot issues and detect threats. So you want to set up proper log rotation so they do not take up too much space on your system, plus are easier to read and manage. To set up proper log rotation, you want to edit the logrotate.conf file located in /etc. Individual application configurations are typically stored in /etc/logrotate.d/, so an example configuration for NGINX would look like:<br />
+‍  </p>
+<div class="highlight"><pre><span></span><code>/var/log/nginx/*.log {
+    weekly
+    missingok
+    rotate 52
+    compress
+    delaycompress
+    notifempty
+    create 0640 www-data adm
+    sharedscripts
+    postrotate
+        [ -f /var/run/nginx.pid ] &amp;&amp; kill -USR1 `cat /var/run/nginx.pid`
+    endscript
+}
+</code></pre></div>
+<p>This configuration rotates logs weekly, keeps 52 weeks of logs, compresses old logs, makes new logs with the right permissions and then signals NGINX to reopen log files after rotation. You can test it with:  </p>
+<div class="highlight"><pre><span></span><code>sudo logrotate -d /etc/logrotate.conf
+</code></pre></div>
+<p>This will show what it will do without actually rotating logs. With this all set up, you can start to do more advanced stuff like triggering alerts based on log entries. Now this is good for a single server but if you manage more than one server it's a good idea to look into tools like Grafana Loki, Graylog and Fluentd. I won't go into detail here, but if you're looking to up your log game, these a decent place to start.<br />
+‍  </p>
+<h2 id="backups">Backups</h2>
+<p>Backups, and more importantly, testing your backups, are extremely important in server management. Remember: a backup is not a backup unless you test it. Untested backups are essentially useless.  </p>
+<p>There are three main types of backups. Full, Differential, Incremental. Full backups are a complete copy of all data on a disk. Takes the most resources, but is the easiest to restore from. Differential backups back up all the changes since the last full backup, it's a middle ground strategy for backups on both space and restoration speed. An incremental backup backs up data that was changed since the last backup, this is the fastest backup option but can be the most complex to restore.  </p>
+<p>I think of it like this. I use incremental backups for things like photos and documents or project files and folders that get edited a lot. I'll use a full backup for backing up and entire server or disk. Differential backups Ill use for backing up full folders like /etc, /opt and log folders.  </p>
+<p>Now what about storage? If you follow the 3-2-1 rule, you will be golden. 3 copies of your data, 2 storage types, and 1 offsite backup. I'd say if this seems like too much, the “offsite” storage is the most important and not one to skip. In case of a catastrophic meltdown, having a hard disk with your backups is invaluable. Offsite / offline backups can also save your ass from ransomware. So keep that in mind. There is a huge amount of backup software out there. <a href="https://github.com/awesome-foss/awesome-sysadmin#backups">This link</a> is for exploring some more professional backup tools. <a href="https://github.com/awesome-selfhosted/awesome-selfhosted?tab=readme-ov-file#file-transfer--synchronization">This link</a> has file sync, transfer and could storage solutions. I use a combo of sync-thing, Borg backup and good old-fashioned FTP.  </p>
+<p>Remember, that backup, logs and server monitoring is an evolving process based on your needs. The specific strategy you implement should be tailored to your needs and the criticality of your data.</p>
+<h2 id="basic-network-safety">Basic Network Safety</h2>
+<p>The next step in securing a server is to lock down ports that need don’t need to be exposed to the internet and banning things that try to log in when they should not. UFW and Fail2Ban are two tools that are in widespread use for this. They are simple and easy to use, UFW lets you set traffic rules for ports and Fail2Ban will ban and IP address when it knocks on a port they should not be or if they fail to log in after some predefined rules. UFW or uncomplicated firewall often comes preinstalled on a lot of VPS services, same with Fail2Ban, but if you are on a new machine and you're unsure, run:<br />
+‍</p>
+<div class="highlight"><pre><span></span><code>sudo apt install ufw
+
+sudo apt install fail2ban
+</code></pre></div>
+<h2 id="ufw">UFW</h2>
+<p>We will worry about Fail2Ban later, for now let's focus on UFW setup. First run some default policys with:  </p>
+<div class="highlight"><pre><span></span><code>sudo ufw default deny incoming
+
+sudo ufw allow outgoing
+</code></pre></div>
+<p>This is considered best practice, as it follows the “the least privileges” idea I touched on earlier. It reduces attack surface on your machine and gives you precise control over what you do expose. In short, this configuration creates a balance between security and functionality. Your server can reach out to the internet as needed, but external entities can only connect to your server in ways you've explicitly allowed. Now let's allow some stuff in.<br />
+‍  </p>
+<div class="highlight"><pre><span></span><code>sudo ufw allow ssh
+sudo ufw allow 80
+sudo ufw allow 443
+</code></pre></div>
+<p>If you are going to be running a web server, you need port 80 and port 443 open. 80 is HTTP and 443 is HTTPS. By default, port 22 is SSH, if you changed this you need to specify the port instead of using the “allow ssh” command. Here are some other useful commands:<br />
+‍  </p>
+<div class="highlight"><pre><span></span><code>#List rules with numbers:
+sudo ufw status numbered
+#Delete by number:
+sudo ufw delete NUMBER
+#Delete by rule specification:
+sudo ufw delete allow 80
+#You can allow connections from specific IP addresses:
+sudo ufw allow from 192.168.1.100
+#You can also only allow an IP to connect to a specfic port with: 
+sudo ufw allow from 192.168.1.100 to any port 22
+#If you neeed to allow a range of ports: 
+sudo ufw allow 6000:6007/tcp
+#To further protect from brut force attacks you can rate limit specific ports with: 
+sudo ufw limit ssh
+#This would limit port 22 to 6 connections in 30 seconds from a single IP. To see the status of the firewall you can use:
+
+#Adding this goves you more info
+sudo ufw status verbose
+#and to reset incase you need to start over: 
+sudo ufw reset
+#and to enable and disable: 
+sudo ufw enable 
+sudo ufw disable
+
+#finaly to enable logging and adjusting the log level: 
+sudo ufw logging on
+sudo ufw logging medium # levels are low, medium, high, full
+</code></pre></div>
+<p>On to Fail2Ban now.  </p>
+<h2 id="fail2ban">Fail2Ban</h2>
+<p>‍<br />
+The main configuration is located in /etc/fail2ban/jail.conf, but it's recommended to create a local configuration file:<br />
+‍  </p>
+<div class="highlight"><pre><span></span><code>sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+
+sudo nano /etc/fail2ban/jail.local
+</code></pre></div>
+<p>‍<br />
+There are some basic settings in the [DEFAULT] section of the jail.local section those are:<br />
+‍  </p>
+<div class="highlight"><pre><span></span><code>bantime = 10m
+findtime = 10m
+maxretry = 5
+</code></pre></div>
+<p>‍<br />
+Ban time is how long an IP is banned. Find time is the time frame in witch Fail2Ban looks for repeated failure, and max retry is the number of failures before an IP is banned. You can tune these as you see fit. There are also custom jails you can set, Fail2Ban also supports jails for commonly used services like SSH. There are even more steps you can take, but I think this covers the basics.  </p>
+<h2 id="nginx">NGINX</h2>
+<p>There are a small mess of web servers out there that you can use. Apache, Caddy, nginx, IIS to name a few. I use Nginx. It's what I know, and it works really damn well. Nginx (pronounced engine-x) is a web server, reverse proxy, and load balancer. As a web server, it excels at serving static content and can handle loads of concurrent connections with fairly low resource usage. As a reverse proxy, it can sit in front of your application servers and forward traffic to them while enchaining the apps' security. Its load balancing aspects can effectively balance traffic between servers, improving reliability and scalability.  </p>
+<p>When installed via apt, the default location for nginx is /etc/nginx/ the nginx.conf is mostly used for global server configuration and includes filed from the /etc/nginx/sites-enabled folder. This modular structure allows for easy management of multiple sites. Two folders to be aware of are the sites-enabled folder and the sites-available folders. You can think of the sites available as a staging place to test your site configurations, while the sites enabled is for live sites and apps. A common practice is to set up and test your configuration in the sites in the sites available, then when you're ready to go live and get an SSL cert, you link the file to the sites-enabled folder. You do that with:<br />
+‍  </p>
+<div class="highlight"><pre><span></span><code>ln -s /etc/nginx/sites-available/yoursitefile /etc/nginx/sites-enabled
+</code></pre></div>
+<p>Then reload nginx and double check nginx status with:<br />
+‍  </p>
+<div class="highlight"><pre><span></span><code>sudo systemctl reload nginx
+
+sudo systemctl status nginx
+</code></pre></div>
+<p>Your site should be live now.  </p>
+<p>Below, I’ll show you some boilerplate Nginx site configurations. Be sure to look into your app or sites needs as these are just starting points. For static sites, this is a decent starting point.   </p>
+<p>Basic Static Website Configuration:  </p>
+<div class="highlight"><pre><span></span><code>server {
+    listen 80;
+    listen [::]:80;
+    server_name example.com www.example.com;
+    root /var/www/example.com/html;
+    index index.html index.htm;
+    location / {
+        try_files $uri $uri/ =404;
+    }
+    # Security headers
+    add_header X-Frame-Options &quot;SAMEORIGIN&quot; always;
+    add_header X-XSS-Protection &quot;1; mode=block&quot; always;
+    add_header X-Content-Type-Options &quot;nosniff&quot; always;
+    add_header Referrer-Policy &quot;no-referrer-when-downgrade&quot; always;
+    add_header Content-Security-Policy &quot;default-src &#39;self&#39; http: https: data: blob: &#39;unsafe-inline&#39;&quot; always;
+
+    # Logging
+    access_log /var/log/nginx/example.com.access.log;
+    error_log /var/log/nginx/example.com.error.log warn;
+
+    # SSL configuration (uncomment after running Certbot)
+    # listen 443 ssl http2;
+    # listen [::]:443 ssl http2;
+    # ssl_protocols TLSv1.2 TLSv1.3;
+    # ssl_prefer_server_ciphers on;
+    # ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
+
+    # Certbot will add its own SSL certificate paths
+    # ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;
+    # ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+}
+</code></pre></div>
+<p>Proxy Pass Configuration:  </p>
+<div class="highlight"><pre><span></span><code>server {
+    listen 80;
+    listen [::]:80;
+    server_name app.example.com;
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+    # Security headers
+    add_header X-Frame-Options &quot;SAMEORIGIN&quot; always;
+    add_header X-XSS-Protection &quot;1; mode=block&quot; always;
+    add_header X-Content-Type-Options &quot;nosniff&quot; always;
+    add_header Referrer-Policy &quot;no-referrer-when-downgrade&quot; always;
+    add_header Content-Security-Policy &quot;default-src &#39;self&#39; http: https: data: blob: &#39;unsafe-inline&#39;&quot; always;
+
+    # Logging
+    access_log /var/log/nginx/app.example.com.access.log;
+    error_log /var/log/nginx/app.example.com.error.log warn;
+
+    # SSL configuration (uncomment after running Certbot)
+    # listen 443 ssl http2;
+    # listen [::]:443 ssl http2;
+    # ssl_protocols TLSv1.2 TLSv1.3;
+    # ssl_prefer_server_ciphers on;
+    # ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
+
+    # Certbot will add its own SSL certificate paths
+    # ssl_certificate /etc/letsencrypt/live/app.example.com/fullchain.pem;
+    # ssl_certificate_key /etc/letsencrypt/live/app.example.com/privkey.pem;
+}
+</code></pre></div>
+<p>WebSocket Upgrade Configuration:  </p>
+<div class="highlight"><pre><span></span><code>server {
+    listen 80;
+    listen [::]:80;
+    server_name ws.example.com;
+    location / {
+        proxy_pass http://localhost:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection &quot;upgrade&quot;;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+    # Security headers
+    add_header X-Frame-Options &quot;SAMEORIGIN&quot; always;
+    add_header X-XSS-Protection &quot;1; mode=block&quot; always;
+    add_header X-Content-Type-Options &quot;nosniff&quot; always;
+    add_header Referrer-Policy &quot;no-referrer-when-downgrade&quot; always;
+    add_header Content-Security-Policy &quot;default-src &#39;self&#39; http: https: data: blob: &#39;unsafe-inline&#39;&quot; always;
+
+    # WebSocket timeout settings
+    proxy_read_timeout 300s;
+    proxy_send_timeout 300s;
+    # Logging
+    access_log /var/log/nginx/ws.example.com.access.log;
+    error_log /var/log/nginx/ws.example.com.error.log warn;
+
+    # SSL configuration (uncomment after running Certbot)
+    # listen 443 ssl http2;
+    # listen [::]:443 ssl http2;
+    # ssl_protocols TLSv1.2 TLSv1.3;
+    # ssl_prefer_server_ciphers on;
+    # ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
+
+    # Certbot will add its own SSL certificate paths
+    # ssl_certificate /etc/letsencrypt/live/ws.example.com/fullchain.pem;
+    # ssl_certificate_key /etc/letsencrypt/live/ws.example.com/privkey.pem;
+}
+</code></pre></div>
+<p>The basic configuration is for serving a simple static site. It specifies the domain name, listens on port 80 for both IPv4 and IPv6, sets the root directory for the site, configures error handling with try_files, adds some basic headers that protect from common web vulnerabilities, sets up logging for access and errors and includes a section for SSL that is commented out. Most of the SSL config will be handled by certbot, but there are a few lines in there that add some SSL security that can be uncommented after certbot is ran.<br />
+‍<br />
+The proxy pass configuration is similar to the basic configuration, but instead of serving files directly, it proxies requests to a local application (in this case, running on port 3000).  </p>
+<p>The third configuration file is geared towards apps that need website connections, it's a lot like the proxy pass configuration with some changes to allow web sockets.    </p>
+<p>Ok, any bit about web servers is not really complete without talking about SSL. For casual use, certbot is a pleb's best friend. It's free, it is fast, and it fucking works. I use the python version of certbot. You can install that with:  <br />
+‍  </p>
+<div class="highlight"><pre><span></span><code>sudo apt install certbot python3-certbot-nginx
+</code></pre></div>
+<p>Once it's installed you can simply run “certbot” in your terminal, this will detect the configs in your sites-enabled folder and ask what you want to do (renew, reissue, etc…). Follow the walk-through, certbot gives you It's pretty straight forward.<br />
+‍<br />
+So nowadays certbot when getting a new cert will set up auto-renew for you, so it's a sit-and-forget kinda task. But to make sure it worked you can run:  </p>
+<div class="highlight"><pre><span></span><code>sudo systemctl status certbot.timer
+</code></pre></div>
+<p>if this is up and running, you should be good to go if you're using systemd.<br />
+‍  </p>
+<h2 id="quality-of-life-tools">Quality Of Life Tools</h2>
+<p>On the topic of tools that make managing your system easier, I'm going to present some tools I use on my servers that I think make management just a bit nicer. Not going to do a deep dive on any tool. All of these are optional and in no particular order. A lot of these I found on the site <a href="https://terminaltrove.com">terminal trove</a>, a great site to browse if you're a terminal junkie like me.   </p>
+<p>First tool, <a href="https://terminaltrove.com/btop/">Btop</a> this is in my personal must haves list. Btop is a terminal monitor of resources. It shows you real time visuals of usage stats for your box’s CPU, RAM, disks, network and running possesses it's written in C++ and can be installed via most package managers.   </p>
+<p>For servers that have a lot of outside connections, i.e. a nostr relay, a tool like <a href="https://terminaltrove.com/neoss/">Neoss</a> is helpful. Neoss aims to replace usual ss command for basic usage. It provides a list of in use TCP and UDP sockets with their respective stats. Its main advantage over SS raw output is its clear and simple TUI (terminal user interface) that allows you to sort, refresh and navigate what is connected to your machine. It's installed Via NPM, meaning you need JavaScript installed.  </p>
+<p><a href="https://github.com/allinurl/goaccess">GoAccess</a> is a terminal based log analyzer for web servers. It's great for a quick real time look at logs while in the terminal, but it can also generate real time HTML, JSON, and CSV reports. GoAccess can be installed via most package managers, works on all platforms.   </p>
+<p>Next on the list is <a href="https://terminaltrove.com/mc/">MC or “midnight commander”</a> Its a powerful text based file manager with a two panel display and lots of features for manipulating files and directories. It's also cross-platform and can be installed via most package managers.   </p>
+<p>In the same thread of server file management is <a href="https://dev.yorhel.nl/ncdu">NCDU</a>. This one is in my must-have list. It is a disk usage analyzer that is designed to find space hogs. It's fast and very simple to use. It can be installed on most systems and package managers. Windows will need Linux subsystems installed to use it.   </p>
+<p>Hopefully you find some use out of these. The last topic I'd like to touch on is DNS it's a bit topic, so I'm not going to do a massive deep dive, but if you're self-hosting it helps to have some of the basics of DNS down. ing doesn’t work.  </p>
+<h2 id="dns">DNS</h2>
+<p>DNS or The Domain Name System is a core part of how the internet as we know it works. Love it or hate it, it's what we have to work with If you want to be accessible to the wider internet. (I dislike what it currently is it, but I’m not opening that can of worms here.) Basically, Think of DNS like a phone book. It’s what allows you to type duckduckgo.com instead of “52.250.42.157” every time you need to search the internet. It translates something easy for humans to remember into the information needed by computers to actually reach “duckduckgo.com”  </p>
+<p>If you're hosting on a VPS, the only thing you really need to know is to know how to point an A record at your server's IP after you decide on a domain to use. Pretty much all VPS hosts can give you a static IP, so that's mostly a set and forget type deal.  </p>
+<p>Hosting from home presents some challenges. One prominent one is (and a valid question that I often hear) not having a static IP address. Nowadays with the number of devices online needing IP addresses we do a lot of juggling, and most IP addresses are assigned dynamically unless you pay for it from your ISP.  But there is a solution. The answer to this is called Dynamic DNS or DDNS. This allows automatic updating of DNS servers every time an IP address changes. There are a mess of ways to set up dynamic DNS. You can host your own service or use a host. <a href="https://dynamic.domains/dynamic-dns/providers-list/default.aspx">Here is a link</a> with some hosts and projects to check out.  </p>
+<p>In a nutshell, it works like so. You chose a provider or set up your own. You get a domain, install the client on your home router or server and the client periodically checks to see if the IP address has changed, if so it updates your DNS record for that domain.   </p>
+<h2 id="docker">Docker</h2>
+<p>I'm not gonna cover how to install docker here. It's best to follow <a href="https://docs.docker.com/engine/install/debian/">the official installation</a> guide anyway. But I want to touch on a few things. First off, docker is useful as hell for testing new apps. But that's about as far as I take it. I personally do not like using docker all that much, and where possible run applications directly. Here are some pros and cons to keep in mind.  </p>
+<h3 id="docker-pros"><strong>Docker Pros</strong></h3>
+<p>Consistency is a big one it can make things more constant between development, testing, and deploying if your system can run docker you can run most docker apps. It can help with isolation, reducing conflicts between apps. In some cases it can help with efficiency as it takes less resources than traditional VM’s. It can help with scaling as it's pretty easy to spin up more containers and the microservice architecture can be useful because you can break down an application into smaller manageable services, allowing for independent scaling of said services. Lastly the community is large, so the documentation is good, and community support is always helpful, plus there is a wide range of ready to go docker images for deployment.  </p>
+<h3 id="docker-cons"><strong>Docker Cons</strong></h3>
+<p>I’ll start with overhead. While it's better than a traditional VM, it uses more resources than running something directly on the host, and I/O operations can be slower. The fact that docker shares the system's kernel means that a compromised app could affect the system. Persistent data is doable but adds a layer of complexity that can cause data loss with new users, it also makes backups more complex. Networking can also be more complex with docker, making it not as straightforward. It's also good to note that if you use UFW or firewalld for a firewall, docker bypasses those rules. Docker is only compatible with iptables. Also, while a well managed docker container can help manage server resources, an improperly manged on can be detrimental to resources as well. Containers can get too large, effecting disk size, and misconfiguration can use too many of your servers resources. It also adds extra layers of complexity when monitoring and debugging applications, especially across multiple containers.  </p>
+<p>At the end of the day, it's your system. But I wanted to lay out some pros and cons when it comes to using Docker. Moving on.   </p>
+<h2 id="wrap-up">Wrap Up</h2>
+<p>Well, that about does it for the basics of server setup and tools. There is a <a href="https://git.sovbit.dev/Enki/sovran-scripts">a script that I wrote</a> that will do most of this for you. I wrote it to make my own server setup faster. You can get that here, it includes all of my must-haves and does some basic configuration. Tweak it to your own needs, and as always stay safe out there.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 Dainius T.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6df46069.min.js"></script>
+      
+    
+  </body>
+</html>
