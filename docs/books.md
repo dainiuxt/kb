@@ -4,6 +4,7 @@
 
 > Matthias Felleisen, Robert Bruce Findler, Matthew Flatt, Shriram Krishnamurthi
 
+[Book: Data Engineering Design Patterns (DEDP)](https://www.dedp.online/) datascience
 
 [A lot of books from Flavio](https://thevalleyofcode.com/) - JavaScript, Python, C, Linux, HTML, CSS, Node.js, React, Next.js, PHP. Available online and download pdf/ePUB.
 

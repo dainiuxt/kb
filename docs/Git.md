@@ -2,6 +2,8 @@
 
 [Some lifesaving git commands and what's happening under the hud when executed](https://dev.to/polymathsomnath/git-commands-that-will-save-your-job-14ac)
 
+[How I teach Git - extensive git guide](https://dev.to/tbroyer/how-i-teach-git-3nj3)
+
 [Git In Two Minutes (for a solo developer) - Gary Robinson's Rants](https://www.garyrobinson.net/2014/10/git-in-two-minutes-for-a-solo-developer.html)
 
 [Oh Shit, Git!?!](https://ohshitgit.com/)

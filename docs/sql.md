@@ -4,6 +4,8 @@
 
 > Discover and learn about 926 database management systems
 
+[SQL tips and tricks](https://github.com/ben-n93/SQL-tips-and-tricks/tree/main)
+
 ['Can I Use' for SQL](https://modern-sql.com/)
 
 [DbGate Open Source (no)SQL Database Client](https://dbgate.org/)
