@@ -56,3 +56,7 @@
 ## React
 
 [The Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react)
+
+[Modern JavaScript for Django Developers](https://www.saaspegasus.com/guides/modern-javascript-for-django-developers/)
+
+> Working with Django in the modern JavaScript ecosystem without giving up the things that make it great 

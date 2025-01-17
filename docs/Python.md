@@ -1,5 +1,9 @@
 # Python
 
+[Modern JavaScript for Django Developers](https://www.saaspegasus.com/guides/modern-javascript-for-django-developers/)
+
+> Working with Django in the modern JavaScript ecosystem without giving up the things that make it great 
+
 [To Ruby From Python](https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-python/)
 
 > Python is another very nice general purpose programming language. Going from Python to Ruby, you’ll find that there’s a little bit more syntax to learn than with Python.

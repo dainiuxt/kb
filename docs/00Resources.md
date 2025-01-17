@@ -82,3 +82,7 @@ This is collection of usefull resources to help progress on Your path to become 
 [Everything You Need to Know About Forming a Professional Support Network - CodeNewbie Community](https://community.codenewbie.org/theoriginalbpc/everything-you-need-to-know-about-forming-a-professional-support-network-4c45)
 
 [17 Website Templates HTML Free Download - DEV Community](https://dev.to/afif/border-with-gradient-and-radius-387f)
+
+[The Copenhagen Book](https://thecopenhagenbook.com/)
+
+The Copenhagen Book provides a general guideline on implementing auth in web applications. It is free, open-source, and community-maintained. It may be opinionated or incomplete at times but we hope this fills a certain void in online resources.

@@ -6,7 +6,7 @@
 
 ### What and Why?
 
-I had scattered sets of bookmarks/links in various places and pretty common situations were that I just simply lost my links. This was very embarrasing and I started to search how I can store all my resources in some centralized system.
+I had scattered sets of bookmarks/links in various places and pretty common situations were that I just simply lost my links. This was very embarrassing and I started to search how I can store all my resources in some centralized system.
 
 I was lucky and found [MkDocs](https://www.mkdocs.org/).
 
